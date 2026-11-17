@@ -1,0 +1,101 @@
+/* Targeted reading improvements; retain each page's established visual style. */
+.portfolio-evidence { --evidence-ink: #192c48; --evidence-muted: #526783; --evidence-line: #c9d8ec; }
+.portfolio-evidence > summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  padding: 20px 0; color: var(--evidence-ink); border-block: 1px solid var(--evidence-line);
+  font: inherit; font-size: 16px; line-height: 1.75; font-weight: 500; cursor: pointer; list-style: none;
+}
+.portfolio-evidence > summary::-webkit-details-marker { display: none; }
+.portfolio-evidence-action { flex: none; color: var(--evidence-muted); font-size: 12px; font-weight: 400; }
+.portfolio-evidence-action::after { content: '展开 ＋'; }
+.portfolio-evidence[open] > summary .portfolio-evidence-action::after { content: '收起 −'; }
+.portfolio-evidence > summary:hover { color: #0a59f7; }
+.portfolio-evidence > summary:focus-visible { outline: 2px solid #0a59f7; outline-offset: 4px; }
+.portfolio-evidence[open] > summary { margin-bottom: 32px; }
+body.portfolio-case-ai .portfolio-evidence > summary > span { color: inherit; }
+body.portfolio-case-ai .portfolio-evidence > summary > .portfolio-evidence-action { color: #526783; }
+
+/* Homepage: keep the project evidence ahead of supplementary self-description. */
+body.content-home .home-framework-evidence {
+  --evidence-ink: var(--theme-ink); --evidence-muted: var(--theme-muted); --evidence-line: var(--theme-line);
+}
+body.content-home .framework-section { padding-block: 48px; }
+body.content-home .home-framework-evidence > summary:hover { color: var(--theme-accent); }
+body.content-home .home-framework-evidence > summary:focus-visible { outline-color: var(--theme-accent); }
+body.content-home .home-framework-evidence .section-heading { display: block; margin-top: 40px; }
+body.content-home :is(.section-index, .case-meta, .case-tags li, .cap-number, .eyebrow) { font-size: 12px; line-height: 1.6; }
+
+/* AI: direct access to the main evidence, keeping original chapter destinations. */
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview { height: auto !important; min-height: 0 !important; overflow: visible; }
+body.portfolio-case-ai .ai-reading-shortcuts {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 8px 24px;
+  max-width: 1200px; margin: 24px auto 0; padding: 16px 0 0; border-top: 1px solid #c9d8ec;
+}
+body.portfolio-case-ai .ai-reading-shortcuts > span { color: #526783; font-size: 12px; line-height: 1.6; }
+body.portfolio-case-ai .ai-reading-shortcuts a {
+  display: inline-flex; align-items: center; gap: 12px; min-height: 44px;
+  color: #0a59f7; font-size: 14px; line-height: 1.5; text-decoration: none; border-bottom: 1px solid transparent;
+}
+body.portfolio-case-ai .ai-reading-shortcuts a:hover { border-bottom-color: currentColor; }
+body.portfolio-case-ai .ai-reading-shortcuts a:active { color: #192c48; }
+body.portfolio-case-ai .ai-reading-shortcuts a:focus-visible { outline: 2px solid #0a59f7; outline-offset: 4px; }
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy.strategy-section {
+  display: block; height: auto !important; min-height: 0; overflow: visible; padding-block: 32px 48px;
+}
+body.portfolio-case-ai #strategy .ai-strategy-evidence { width: 100%; max-width: 1200px; }
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-board { width: 100%; }
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-conclusion { width: 100%; height: auto; margin-top: 24px; }
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset {
+  height: auto; overflow: visible;
+}
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-intro,
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-intro > p:last-child {
+  height: auto;
+}
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .ai-mechanism-bridge {
+  width: 100%; max-width: 1200px; height: auto; margin: 0; color: #526783; font-size: 14px; line-height: 1.75;
+}
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .mechanism-grid {
+  height: auto; overflow: visible;
+}
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .mechanism-grid article {
+  height: auto; overflow: visible;
+}
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .mechanism-grid h4 { height: auto; overflow: visible; }
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 :is(.case-v2-hero-capabilities > span, .decision-answer > span, #system-asset .mechanism-grid article > span, .evolution-collaboration-grid .is-owned b) {
+  font-size: 12px; line-height: 1.6;
+}
+body.portfolio-case-ai .ai-live-entry { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 24px; margin: 24px 0 0; color: #526783; font-size: 12px; line-height: 1.6; }
+body.portfolio-case-ai .ai-live-entry a { display: inline-flex; align-items: center; gap: 16px; min-height: 44px; color: #0a59f7; font-size: 14px; text-decoration: underline; text-underline-offset: 4px; }
+body.portfolio-case-ai .ai-live-entry a:hover { color: #192c48; }
+body.portfolio-case-ai .ai-live-entry a:focus-visible { outline: 2px solid #0a59f7; outline-offset: 4px; }
+
+/* Website: improve the small explanatory labels without changing the diagram. */
+body.portfolio-case-developer .f-support-diagram > p,
+body.portfolio-case-developer .f-support-diagram > small { font-size: 12px; line-height: 1.6; }
+body.portfolio-case-developer .f-support-diagram .f-support-node b { font-size: 12px; line-height: 16px; }
+body.portfolio-case-developer .f-support-evidence-grid > .f-support-diagram { box-sizing: border-box; width: 100%; max-width: 600px; }
+body.portfolio-case-developer .f-support-diagram > small { top: auto; bottom: 12px; left: 14px; right: 14px; }
+@media (min-width: 621px) {
+  body.portfolio-case-developer .f-support-diagram .f-support-cluster { height: auto; aspect-ratio: 1.72; }
+}
+
+@media (max-width: 900px) {
+  body.portfolio-case-ai .ai-reading-shortcuts { margin-top: 16px; gap: 4px 24px; }
+  body.portfolio-case-ai .ai-reading-shortcuts > span { flex-basis: 100%; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-board { height: auto; overflow: visible; }
+}
+@media (max-width: 600px) {
+  body.content-home .profile-portrait img { height: 240px; object-position: center 30%; }
+  body.content-home .profile-hero { gap: 16px; }
+  body.content-home .profile-facts div { min-height: 80px; padding-block: 12px; }
+  body.content-home .framework-section { padding-block: 32px; }
+  body.content-home .home-framework-evidence h2 { font-size: 30px; line-height: 1.4; }
+  .portfolio-evidence > summary { gap: 16px; font-size: 14px; padding-block: 16px; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .mechanism-grid article { min-height: 0; gap: 16px; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .mechanism-grid h4 { font-size: 20px; line-height: 1.5; }
+}
+@media (max-width: 620px) {
+  body.portfolio-case-developer .f-support-evidence-grid > .f-support-diagram { height: 450px; min-height: 450px; }
+  body.portfolio-case-developer .f-support-diagram .f-support-cluster { width: min(220px, calc(100% - 24px)); margin-left: 0; transform: translateX(-50%); }
+}

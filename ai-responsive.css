@@ -1,0 +1,101 @@
+/* AI case only: current-location feedback and responsive reading refinements. */
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 .portfolio-header .portfolio-navigation > a:not(.portfolio-nav-action) {
+  color: #526783;
+}
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 .portfolio-header .portfolio-navigation > a[aria-current="location"] {
+  color: #0a59f7; text-decoration: underline; text-underline-offset: 8px;
+}
+/* Raise only secondary labels; keep heading and body scales intact. */
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 :is(#overview, #role, #arc, #context, #foundation, #strategy, #decisions, #interaction, #assistant, #system-asset, #delivery, #evolution, #value, #case-footer) :is(
+  .case-v2-kicker, .case-v2-facts dt, .case-v2-label,
+  .decisions-chapter-mark, .interaction-chapter-mark, .assistant-chapter-mark,
+  .system-asset-label, .assistant-rules-label, .assistant-evidence figcaption, .delivery-evidence figcaption, .strategy-step-index, .strategy-step-bottom > span,
+  .strategy-tags li, .strategy-board-head > p, .project-arc-evolution > small,
+  .foundation-journey-heading > span, .foundation-journey-steps small,
+  .foundation-journey-steps > li > span, .interaction-model-rules dt
+) { font-size: 12px; line-height: 1.6; }
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence figcaption {
+  font-size: 13px; line-height: 1.6;
+}
+@media (max-width: 1100px) {
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence {
+    display: flex; flex-direction: column; width: 100%; height: auto; padding: 16px; gap: 12px;
+  }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-crop,
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence figcaption { display: contents; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-crop .ai-image-link {
+    position: relative; width: 100%; height: auto; min-width: 0; flex: none;
+  }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-crop img {
+    position: static; width: 100%; max-width: 100%; height: auto; object-fit: contain; margin: 0;
+  }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence figcaption > span {
+    display: flex; flex-direction: column; gap: 4px; padding: 0 0 16px; font-size: 14px; line-height: 1.6; color: #526783;
+  }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence figcaption > span strong { font-size: 16px; line-height: 1.5; }
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  /* Keep each caption directly below its screenshot, in the same column. */
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start;
+    gap: 12px 16px; max-width: 880px; margin-inline: auto;
+  }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence:has(.ai-image-link:nth-child(3)) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  body.portfolio-case-ai #decisions .decision-product-crop .ai-image-link:nth-child(1) { grid-area: 1 / 1; }
+  body.portfolio-case-ai #decisions .decision-product-crop .ai-image-link:nth-child(2) { grid-area: 1 / 2; }
+  body.portfolio-case-ai #decisions .decision-product-crop .ai-image-link:nth-child(3) { grid-area: 1 / 3; }
+  body.portfolio-case-ai #decisions .decision-product-evidence figcaption > span:nth-child(1) { grid-area: 2 / 1; }
+  body.portfolio-case-ai #decisions .decision-product-evidence figcaption > span:nth-child(2) { grid-area: 2 / 2; }
+  body.portfolio-case-ai #decisions .decision-product-evidence figcaption > span:nth-child(3) { grid-area: 2 / 3; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence figcaption > span { padding-bottom: 0; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-option-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 880px; margin-inline: auto; }
+}
+@media (max-width: 900px) {
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview { padding-top: 64px; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 .case-v2-facts dd { font-size: 14px; line-height: 1.6; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 :is(h2, h3, h4) { text-wrap: balance; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution > .case-v2-section-intro h2 > em { display: block; text-wrap: balance; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution > .case-v2-section-intro h2 > br { display: none; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-tags { gap: 8px; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step { height: auto; min-height: 304px; }
+}
+@media (max-width: 700px) {
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-crop .ai-image-link { max-width: 480px; margin-inline: auto; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence figcaption > span { width: 100%; max-width: 480px; margin-inline: auto; }
+}
+@media (max-width: 620px) {
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview { padding-top: 48px; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence { padding: 12px; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution > .case-v2-section-intro h2 { font-size: 28px; line-height: 1.4; }
+}
+
+@media (max-width: 1100px) {
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-flow > .strategy-step {
+    display: flex; flex-direction: column; height: auto; min-height: 304px; padding: 20px;
+  }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step :is(.strategy-step-index, .strategy-step-layer, h3, .strategy-step-bottom) {
+    position: static; width: 100%; height: auto; flex: none;
+  }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-layer { margin-top: 8px; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step h3 { margin: 16px 0; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-bottom { margin-top: auto; padding-top: 16px; border-top: 1px solid #d8e5f6; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-bottom::before { display: none; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-tags { height: auto; margin-top: 12px; gap: 8px; }
+}
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-ai .strategy-tags li,
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-insight :is(dt, small) { font-size: 12px; line-height: 1.6; }
+@media (min-width: 1101px) {
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation { height: auto !important; min-height: 732px; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-board-head > p { width: auto; max-width: none; white-space: nowrap; }
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-item { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions :is(.decision-copy, .decision-evidence) { width: 100%; min-width: 0; }
+}
+
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer .portfolio-case-footer-kicker { font-size: 12px; line-height: 1.6; }
+
+body.portfolio-case-ai .case-v2-lede a { color:#0a59f7; text-decoration:underline; text-underline-offset:3px; }
+body.portfolio-case-ai .case-v2-lede a:focus-visible { outline:2px solid #0a59f7; outline-offset:4px; }

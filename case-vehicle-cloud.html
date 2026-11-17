@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="车辆运维数据管理平台体验重构：通过现场调研校准初版用户定义，提出三类协作角色，并将岗位任务转化为交互方案。" />
+    <title>车辆运维数据管理平台，重构系统体验 · 魏方</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./case-v2-shared.css?v=20261115-01" />
+    <link rel="stylesheet" href="./portfolio-case-unified.css?v=20261116-03" />
+    <link rel="stylesheet" href="./case-fidelity-audit.css?v=20261116-09" />
+    <link rel="stylesheet" href="./portfolio-nav.css?v=20261117" />
+    <link rel="stylesheet" href="./vhr-reading.css?v=20261117-02" />
+    <script src="./vhr-navigation.js?v=20261117-01" defer></script>
+    <link rel="stylesheet" href="./vhr-research.css?v=20261117-06" />
+    <script src="./case-v2-site.js?v=20261115-01" defer></script>
+  </head>
+  <body class="case-v2 case-vhr vhr-story vhr-fidelity portfolio-case portfolio-case-vhr">
+    <div class="progress" aria-hidden="true"><span></span></div>
+    <header class="portfolio-header">
+      <div class="portfolio-nav-wrap">
+        <a class="portfolio-brand" href="./index.html" aria-label="返回魏方个人主页">WEI FANG.</a>
+        <button class="portfolio-menu" type="button" aria-expanded="false" aria-controls="portfolio-navigation" aria-label="打开导航菜单"><span></span><span></span></button>
+        <nav class="portfolio-navigation" id="portfolio-navigation" aria-label="案例章节导航">
+          <a href="#background">业务洞察</a>
+          <a href="#roles">角色与任务</a>
+          <a href="#design">核心方案</a>
+          <a href="#paths">协作落地</a>
+          <a href="#verification">设计验证</a>
+          <a class="portfolio-nav-action" href="assets/downloads/wei-fang-resume.pdf" download="魏方_UX与AI产品体验设计_简历.pdf">下载简历 <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="vhr-fidelity-hero" id="overview">
+        <div class="vhr-fidelity-hero-inner">
+          <p class="vhr-fidelity-breadcrumb">精选案例 / VHR · 车辆运维数据管理平台</p>
+          <div class="vhr-fidelity-hero-grid">
+            <div class="vhr-fidelity-copy">
+              <p class="vhr-fidelity-eyebrow">0 → 1&nbsp; / &nbsp;ENTERPRISE UX</p>
+              <h1>识别真实业务分工，<br />重构多角色运维体验。</h1>
+              <p class="vhr-fidelity-lede">面向车企的车辆健康数据运维平台。<br />我通过现场调研，提出三类协作角色，<br />将岗位任务转化为监控、配置与诊断方案。</p>
+              <div class="vhr-fidelity-thesis" aria-label="项目主张">
+                <span>角色建模</span><i aria-hidden="true">→</i><span>交互设计</span><i aria-hidden="true">→</i><span>验证迭代</span>
+              </div>
+              <ul class="vhr-fidelity-tags" aria-label="项目能力标签">
+                <li>企业级 UX</li><li>现场调研</li><li>角色与任务架构</li><li>可用性测试</li>
+              </ul>
+            </div>
+            <figure class="vhr-fidelity-visual">
+              <div class="vhr-image"><img src="./assets/case/vhr/optimized/vhr-hero-visual-660.webp" srcset="./assets/case/vhr/optimized/vhr-hero-visual-660.webp 660w" sizes="(max-width: 900px) calc(100vw - 40px), 600px" alt="车辆运维平台多角色监控、告警与诊断界面示意" width="660" height="545" fetchpriority="high" loading="eager" decoding="async" /></div>
+            </figure>
+          </div>
+          <p class="vhr-fidelity-note"><strong>展示说明</strong><span>方案界面图为重绘示意，仅用于说明设计思路与交互逻辑。</span></p>
+          <dl class="vhr-fidelity-facts">
+            <div><dt>项目周期</dt><dd>2021—2023</dd></div>
+            <div><dt>我的角色</dt><dd>交互负责人 &amp; 业务接口人</dd></div>
+            <div><dt>服务对象</dt><dd>客服、技术服务与研发人员</dd></div>
+            <div><dt>项目范围</dt><dd>运维平台 / 数字大屏 / 三电监控</dd></div>
+          </dl>
+          <p class="vhr-fidelity-support">本案例聚焦：角色与任务重构、关键操作设计及上线后的可用性验证。</p>
+        </div>
+      </section>
+
+      <section class="vhr-fidelity-section vhr-research-section" id="background">
+        <div class="vhr-research-inner">
+          <div class="vhr-research-kicker"><i aria-hidden="true"></i><span>01 / 业务洞察</span></div>
+          <h2>走进现场，识别真实的业务分工。</h2>
+          <p class="vhr-research-lede">缺少可直接借鉴的成熟方案，初版以“车辆运维”为统一用户。我通过实地调研发现，报障核验、专业诊断与深度分析，需要不同岗位按需协作。</p>
+          <div class="vhr-research-evidence">
+            <figure class="vhr-research-photo"><div class="vhr-image"><img src="./assets/case/vhr/optimized/vhr-insight-photo-highres-1600.webp" srcset="./assets/case/vhr/optimized/vhr-insight-photo-highres-800.webp 800w, ./assets/case/vhr/optimized/vhr-insight-photo-highres-1600.webp 1600w" sizes="(max-width: 900px) calc(100vw - 40px), 600px" alt="现场调研与业务讨论照片" width="4032" height="3024" loading="lazy" decoding="async" /></div><figcaption>现场调研与业务讨论 / 原项目留存照片</figcaption></figure>
+            <div class="vhr-research-findings">
+              <article><span>初版定义</span><h3>一个角色，承接所有运维任务。</h3><p>以“车辆运维”为统一用户，尚未区分不同岗位的处理职责与信息需求。</p></article>
+              <article><span>现场发现</span><h3>同一问题，需要不同岗位协作。</h3><p>客服接收与核验，技术服务开展诊断，研发深入分析。不同处理深度，需要不同信息与交接依据。</p></article>
+            </div>
+          </div>
+          <p class="vhr-research-takeaway"><strong>我的关键判断</strong><span>将统一的“车辆运维”用户细化为三类协作角色，再按各自任务组织信息与操作。</span></p>
+        </div>
+      </section>
+
+      <section class="vhr-fidelity-section vhr-research-section" id="roles">
+        <div class="vhr-research-inner">
+          <div class="vhr-research-kicker"><i aria-hidden="true"></i><span>02 / 角色与任务</span></div>
+          <h2>按处理深度，明确各岗位的信息与任务。</h2>
+          <p class="vhr-research-lede">400 客服先核验问题，技术服务工程师开展专业诊断，研发人员深入分析。角色划分用于明确各岗位需要什么信息、完成什么任务。</p>
+          <div class="vhr-research-flow" aria-label="报障处理按需协作">
+            <strong>用户报障</strong><span aria-hidden="true">→</span><strong>客服核验</strong><span class="vhr-flow-condition">需专业诊断时 →</span><strong>技术服务诊断</strong><span class="vhr-flow-condition">需深入分析时 →</span><strong>研发分析</strong>
+            <p>按问题需要交接，不要求每个问题经过全部岗位。</p>
+          </div>
+          <div class="vhr-research-roles">
+            <article><span class="vhr-research-role-index">01 / 运维中心</span><h3>400 客服</h3><strong class="vhr-research-role-goal">接收报障，完成初步核验</strong><dl><div><dt>关注信息</dt><dd>车辆信息、当前状态与故障告警。</dd></div><div><dt>主要任务</dt><dd>接收报障、在线指导，记录问题。</dd></div><div><dt>交接依据</dt><dd>需要专业诊断时，将问题转交技术服务。</dd></div></dl></article>
+            <article><span class="vhr-research-role-index">02 / 技术支持 · L1</span><h3>技术服务工程师</h3><strong class="vhr-research-role-goal">远程诊断，明确故障范围</strong><dl><div><dt>关注信息</dt><dd>故障码、故障时刻数据与维修方案。</dd></div><div><dt>主要任务</dt><dd>分析故障，给出专业维修建议。</dd></div><div><dt>交接依据</dt><dd>需要深入信号或系统分析时，进一步交接。</dd></div></dl></article>
+            <article><span class="vhr-research-role-index">03 / 技术支持 · L2</span><h3>研发人员</h3><strong class="vhr-research-role-goal">深入分析，定位故障根因</strong><dl><div><dt>关注信息</dt><dd>车辆信号、性能趋势与部件日志。</dd></div><div><dt>主要任务</dt><dd>分析异常，识别系统性故障模式。</dd></div><div><dt>处理输出</dt><dd>记录分析结论，为后续处理提供依据。</dd></div></dl></article>
+          </div>
+          <div class="vhr-research-design">
+            <h3>从岗位任务，推导界面设计重点。</h3>
+            <p class="vhr-narrative-note">角色模型明确职责分工，具体任务进一步决定信息呈现与操作方式。</p>
+            <div class="vhr-design-links">
+              <article><h4>信息组织</h4><p>客服核验车辆状态，研发分析信号与趋势；监控信息应随岗位任务区分重点。</p><span>方案承接 · A 实时监控</span></article>
+              <article><h4>任务操作</h4><p>配置告警时仍需参照分析对象，将参数面板留在画布旁，保持操作上下文。</p><span>方案承接 · B 告警配置</span></article>
+              <article><h4>诊断线索</h4><p>人员交接明确处理职责；故障关系视图呈现对象关联，帮助诊断时定位与查看。</p><span>方案承接 · C 故障定位</span></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vhr-fidelity-section vhr-fidelity-solution" id="design">
+        <div class="vhr-fidelity-section-inner vhr-fidelity-solution-inner">
+          <div class="vhr-fidelity-section-kicker"><i></i><span>03 / 核心方案</span></div>
+          <h2>围绕岗位任务，组织监控、配置与诊断。</h2>
+          <p class="vhr-fidelity-section-lede">核心方案聚焦监控、配置与故障定位；AI 预警作为项目期间的规划探索补充呈现。</p>
+
+          <div class="vhr-solution-copy vhr-solution-a-copy">
+            <span class="vhr-solution-index">A / 实时监控</span>
+            <h3>让不同岗位，<br />先看到各自关心的指标。</h3>
+            <p class="vhr-solution-problem">问题：客服核验车辆状态，研发分析信号趋势，<br />统一的指标视图难以兼顾不同任务。</p>
+            <ul><li>按角色任务组织指标组合</li><li>支持图表维度与布局切换</li></ul>
+            <p class="vhr-solution-change">改变 → 从默认数据，转向任务所需信息。</p>
+          </div>
+          <figure class="vhr-solution-evidence vhr-solution-a-visual"><div class="vhr-image"><img src="./assets/case/vhr/optimized/vhr-solution-monitor-600.webp" srcset="./assets/case/vhr/optimized/vhr-solution-monitor-600.webp 600w" sizes="(max-width: 900px) calc(100vw - 40px), 600px" alt="三类角色实时监控方案示意" width="600" height="521" loading="lazy" decoding="async" /></div></figure>
+
+          <div class="vhr-solution-copy vhr-solution-b-copy">
+            <span class="vhr-solution-index">B / 告警配置</span>
+            <h3>把复杂输入，<br />留在当前分析上下文中。</h3>
+            <p class="vhr-solution-problem">问题：参数格式和输入规则复杂，<br />离开画布配置容易打断任务。</p>
+            <ul><li>参数标签化，并提供默认值</li><li>点选配置，降低重复输入</li><li>侧滑面板吸附在画布旁</li></ul>
+            <p class="vhr-solution-change">改变 → 配置步骤与分析对象保持在同一处。</p>
+          </div>
+
+          <figure class="vhr-solution-evidence vhr-solution-b-visual"><div class="vhr-image"><img src="./assets/case/vhr/optimized/vhr-solution-alert-600.webp" srcset="./assets/case/vhr/optimized/vhr-solution-alert-600.webp 600w" sizes="(max-width: 900px) calc(100vw - 40px), 600px" alt="告警配置画布与吸附式侧滑面板示意" width="600" height="392" loading="lazy" decoding="async" /></div></figure>
+
+          <div class="vhr-solution-later">
+          
+          <div class="vhr-solution-copy vhr-solution-d-copy">
+            <span class="vhr-solution-index">C / 故障流管理与定位</span>
+            <h3><span class="vhr-solution-title-part">看清对象链路，</span><span class="vhr-solution-title-part">让故障定位有迹可循。</span></h3>
+            <p class="vhr-solution-problem">问题：故障对象与关联方向不清晰，难以判断从哪里继续排查。<br />设计重点：明确当前对象、关联路径与故障信息。</p>
+          </div>
+          <figure class="vhr-solution-evidence vhr-solution-d-visual"><div class="vhr-image"><img src="./assets/case/vhr/optimized/vhr-solution-fault-highres-1600.webp" srcset="./assets/case/vhr/optimized/vhr-solution-fault-highres-799.webp 799w, ./assets/case/vhr/optimized/vhr-solution-fault-highres-1600.webp 1600w" sizes="(max-width: 900px) calc(100vw - 40px), 1200px" alt="故障对象关联路径与故障点定位示意" width="2666" height="1304" loading="lazy" decoding="async" /></div></figure>
+          <div class="vhr-solution-d-notes"><article><b>01</b><strong>确认正在排查的对象</strong><p>选中反馈突出当前对象，<br />明确操作焦点。</p></article><article><b>02</b><strong>看清对象之间的关联</strong><p>呈现关联方向与路径，<br />为继续排查提供线索。</p></article><article><b>03</b><strong>定位并查看故障信息</strong><p>沿路径定位故障点，<br />在同一上下文查看详情。</p></article></div>
+          <p class="vhr-solution-footnote">交互补充：方案以涟漪反馈强调选中对象，以流动效果辅助识别关联方向；此处为静态展示。</p>
+          
+          <div class="vhr-solution-copy vhr-solution-c-copy">
+            <span class="vhr-solution-index">D / 规划探索 · AI 智能预警</span>
+            <h3>让指标变化与 AI 上下界分析，在同一页联动。</h3>
+            <p class="vhr-solution-problem">2021—2023 年项目期间规划：将指标看板、AI 上下界分析与预警解读放在同一页，支持异常识别与后续排查。此处展示规划方案，不代表已上线能力。</p>
+          </div>
+          <figure class="vhr-solution-evidence vhr-solution-c-visual"><div class="vhr-image"><img src="./assets/case/vhr/optimized/vhr-solution-ai-highres-1600.webp" srcset="./assets/case/vhr/optimized/vhr-solution-ai-highres-800.webp 800w, ./assets/case/vhr/optimized/vhr-solution-ai-highres-1600.webp 1600w" sizes="(max-width: 900px) calc(100vw - 40px), 1200px" alt="AI 智能预警与上下界分析页面" width="2652" height="1396" loading="lazy" decoding="async" /></div></figure>
+          <p class="vhr-solution-change vhr-solution-c-change">设计目标 → 在同一页查看指标、理解预警，并衔接故障排查。</p>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="vhr-fidelity-section vhr-research-section" id="paths">
+        <div class="vhr-research-inner">
+          <div class="vhr-research-kicker"><i aria-hidden="true"></i><span>04 / 协作落地</span></div>
+          <h2>让研究进入评审，让方案进入交付。</h2>
+          <p class="vhr-research-lede">作为交互负责人和业务接口人，我用角色模型、任务路径与方案取舍支持产品线评审，并协调排期与设计资源，推进交付。</p>
+          <div class="vhr-delivery-schedule">
+            <h3>需求评审前移 1—2 周，为交付留出空间。</h3>
+          <div class="vhr-delivery-compare"><article class="is-before"><span>原节奏</span><h3>设计任务集中在前半个月。</h3><p>需求集中进入，设计人力紧张；一旦延误，<br />开发、测试与上线节奏会被连带影响。</p><div class="vhr-delivery-bars"><i></i><i></i><small>上半月 / 设计压力集中</small><small>下半月 / 任务分布不均</small></div></article><article class="is-after"><span>调整方式</span><h3>下月需求，提前 1–2 周评审。</h3><p>与产品线提前开展需求评审并同步设计团队，<br />错峰启动设计评审，为后续开发与测试预留时间。</p><div class="vhr-delivery-bars"><i></i><i></i><i></i><small>需求预评审</small><small>设计评审</small><small>开发 / 测试</small></div></article></div>
+            <p class="vhr-delivery-footnote">节奏示意用于说明协作方式，不代表工时测量或提效百分比。</p>
+          </div>
+          <div class="vhr-narrative-resource"><strong>1 交互 ＋ 2 视觉</strong><p>协调非全时投入的设计资源，同步评估工作量、排期风险与交付质量。</p></div>
+        </div>
+      </section>
+
+      <section class="vhr-fidelity-section vhr-research-section vhr-validation-close" id="verification">
+        <div class="vhr-research-inner">
+          <div class="vhr-research-kicker"><i aria-hidden="true"></i><span>05 / 设计验证</span></div>
+          <h2><span class="vhr-validation-title-part">回到真实任务，</span><span class="vhr-validation-title-part">检验设计是否可用。</span></h2>
+          <p class="vhr-research-lede">1.0 上线后，我主导可用性测试，负责测试准备、用户访谈与问题梳理，并推进迭代方案设计和评审。</p>
+          <ol class="vhr-validation-phases" aria-label="已开展的验证工作">
+            <li><span>测试前</span><h3>明确任务与判断依据</h3><p>定义关键路径、测试指标与参与用户，建立体验评估基线。</p></li>
+            <li><span>测试中</span><h3>观察使用，理解障碍</h3><p>开展用户访谈与任务观察，记录问题出现的场景及用户反馈。</p></li>
+            <li><span>测试后</span><h3>让反馈进入迭代</h3><p>整理问题、定义改进需求，设计迭代方案并汇报评审。</p></li>
+          </ol>
+          <div class="vhr-validation-evidence">
+            <figure class="vhr-validation-photo"><div class="vhr-image"><img src="./assets/case/vhr/optimized/vhr-validation-field-highres-1600.webp" srcset="./assets/case/vhr/optimized/vhr-validation-field-highres-799.webp 799w, ./assets/case/vhr/optimized/vhr-validation-field-highres-1600.webp 1600w" sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1279px) 50vw, 560px" alt="可用性测试现场与任务观察" width="2938" height="1118" loading="lazy" decoding="async" /></div><figcaption>测试现场 / 用户访谈 · 任务观察 · 问题记录</figcaption></figure>
+            <div class="vhr-validation-perspectives"><h3>交叉判断问题，不只依赖单一评分。</h3>
+              <dl><div><dt>用户视角</dt><dd>结合访谈与任务观察，识别实际使用障碍。</dd></div><div><dt>专家视角</dt><dd>检查一致性与交互规则，补充体验问题判断。</dd></div><div><dt>产品视角</dt><dd>结合任务目标与业务要求，讨论改进方向和优先级。</dd></div></dl>
+              <p class="vhr-validation-dimensions">评估维度：一致性、易用性、满意度、任务效率与性能。</p>
+            </div>
+          </div>
+          <div class="vhr-validation-next" id="validation">
+            <h3>后续验证思路：用同一任务检验改动。</h3>
+            <p>围绕核心方案，可从以下任务检查改动；这些是复测思路，不是已完成的结果。</p>
+            <dl class="vhr-validation-tasks">
+              <div><dt>角色与信息</dt><dd>能否找到岗位所需信息？<span>观察入口误选、信息遗漏与额外求助。</span></dd></div>
+              <div><dt>告警配置</dt><dd>能否在分析场景中完成配置？<span>观察输入错误、反复修改与任务中断。</span></dd></div>
+              <div><dt>故障定位</dt><dd>能否理解对象关联并继续排查？<span>观察对象误选、关系误读与操作停滞。</span></dd></div>
+            </dl>
+          </div>
+          <p class="vhr-validation-scope">展示边界：本节呈现已开展的测试与迭代工作，不以复测设想推断优化成效。</p>
+          <p class="vhr-validation-value"><strong>我的价值</strong>从现场研究校准角色定义，把岗位任务转成交互方案，再通过可用性测试推动迭代。</p>
+        </div>
+      </section>
+
+      <footer id="case-footer" class="portfolio-case-footer" aria-label="继续浏览案例">
+        <div class="portfolio-case-footer-inner">
+          <p class="portfolio-case-footer-kicker"><i></i>CONTINUE EXPLORING</p>
+          <a class="portfolio-case-next" href="./case-ai-assistant.html">
+            <span><small>下一个案例 / AI PRODUCT EXPERIENCE</small><strong>AI 智能服务体系</strong><em>从零散答疑，走向可继续的任务与服务。</em></span>
+            <b aria-hidden="true">↗</b>
+          </a>
+          <div class="portfolio-case-footer-meta"><a href="./index.html#works">← 返回精选案例</a><span>© 2026 WEI FANG / UX · AI UX DESIGNER</span><a href="#overview">回到顶部 ↑</a></div>
+        </div>
+      </footer>
+    </main>
+    <button class="back-to-top" type="button" aria-label="回到顶部" title="回到顶部" aria-hidden="true" tabindex="-1"><span aria-hidden="true">&#8593;</span></button>
+  </body>
+</html>

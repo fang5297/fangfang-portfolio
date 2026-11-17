@@ -1,0 +1,91 @@
+/* Personal contribution summary: content-led rows, shared AI case palette. */
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value.ai-contribution {
+  box-sizing: border-box;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 80px max(32px, calc((100% - 1200px) / 2));
+  overflow: visible;
+  background: #f8faff;
+  color: #192c48;
+}
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value.ai-contribution > .case-v2-value-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#value.ai-contribution .ai-ownership-heading {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: end;
+  gap: 64px;
+  margin: 24px 0 48px;
+}
+#value.ai-contribution .ai-ownership-heading h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 600;
+  text-wrap: balance;
+}
+#value.ai-contribution .ai-ownership-heading h2 span { color: #0a59f7; }
+#value.ai-contribution .ai-ownership-heading p,
+#value.ai-contribution .ai-ownership-details p {
+  margin: 0;
+  color: #526783;
+  font-size: 16px;
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+#value.ai-contribution .ai-ownership-row {
+  display: grid;
+  grid-template-columns: 224px minmax(0, 1fr);
+  gap: 48px;
+  padding: 40px 0;
+  border-top: 1px solid #d5e1f1;
+}
+#value.ai-contribution .ai-ownership-stage p {
+  margin: 0 0 12px;
+  color: #526783;
+  font-size: 12px;
+  line-height: 1.6;
+}
+#value.ai-contribution .ai-ownership-stage h3 {
+  margin: 0;
+  color: #0a59f7;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+#value.ai-contribution .ai-ownership-details { min-width: 0; }
+#value.ai-contribution .ai-ownership-details > h4 {
+  margin: 0 0 24px;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 600;
+  text-wrap: pretty;
+}
+#value.ai-contribution .ai-ownership-evidence {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+#value.ai-contribution .ai-ownership-evidence h5 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+#value.ai-contribution .ai-ownership-row:last-child { padding-bottom: 0; }
+@media (max-width: 1000px) {
+  #value.ai-contribution .ai-ownership-heading { gap: 32px; }
+  #value.ai-contribution .ai-ownership-row { grid-template-columns: 160px minmax(0, 1fr); gap: 32px; }
+  #value.ai-contribution .ai-ownership-evidence { grid-template-columns: 1fr; gap: 24px; }
+}
+@media (max-width: 620px) {
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value.ai-contribution { padding: 64px 20px; }
+  #value.ai-contribution .ai-ownership-heading { grid-template-columns: 1fr; gap: 24px; margin-bottom: 32px; }
+  #value.ai-contribution .ai-ownership-heading h2 { font-size: 30px; line-height: 1.4; }
+  #value.ai-contribution .ai-ownership-row { grid-template-columns: 1fr; gap: 24px; padding: 32px 0; }
+  #value.ai-contribution .ai-ownership-stage p { margin-bottom: 8px; }
+  #value.ai-contribution .ai-ownership-details > h4 { font-size: 20px; line-height: 1.5; }
+}

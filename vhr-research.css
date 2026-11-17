@@ -1,0 +1,186 @@
+/* Research narrative uses natural flow so revised copy fits every viewport. */
+body.portfolio-case-vhr :is(#background, #roles).vhr-research-section {
+  height: auto !important; min-height: 0; overflow: visible; padding: 0;
+  color: #101014; background: #f4f4f6;
+}
+body.portfolio-case-vhr #roles.vhr-research-section { background: #fff; }
+body.portfolio-case-vhr .vhr-research-inner { box-sizing: border-box; width: min(1200px, calc(100% - 64px)); margin: 0 auto; padding: 64px 0; }
+body.portfolio-case-vhr .vhr-research-kicker { display: flex; gap: 16px; align-items: center; margin-bottom: 24px; color: #67677e; font-size: 12px; line-height: 1.5; }
+body.portfolio-case-vhr .vhr-research-kicker i { width: 22px; height: 4px; background: #ff6b35; }
+body.portfolio-case-vhr .vhr-research-inner h2 { margin: 0; font-size: 40px; line-height: 1.35; font-weight: 700; letter-spacing: -.02em; text-wrap: balance; }
+body.portfolio-case-vhr .vhr-research-lede { max-width: 960px; margin: 20px 0 0; color: #454554; font-size: 18px; line-height: 1.75; text-wrap: pretty; }
+body.portfolio-case-vhr .vhr-research-evidence { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 48px; align-items: center; margin-top: 40px; }
+body.portfolio-case-vhr .vhr-research-photo { margin: 0; min-width: 0; }
+body.portfolio-case-vhr .vhr-research-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; border-radius: 16px; }
+body.portfolio-case-vhr .vhr-research-photo figcaption { margin-top: 12px; color: #67677e; font-size: 12px; line-height: 1.6; }
+body.portfolio-case-vhr .vhr-research-findings article { padding: 24px 0; }
+body.portfolio-case-vhr .vhr-research-findings article + article { border-top: 1px solid #d8d8df; }
+body.portfolio-case-vhr .vhr-research-findings article > span,
+body.portfolio-case-vhr .vhr-research-actions article > span,
+body.portfolio-case-vhr .vhr-research-role-index { color: #1b55f5; font-size: 12px; line-height: 1.6; }
+body.portfolio-case-vhr .vhr-research-findings h3 { margin: 12px 0; font-size: 24px; line-height: 1.5; text-wrap: balance; }
+body.portfolio-case-vhr .vhr-research-findings p,
+body.portfolio-case-vhr .vhr-research-actions p { margin: 0; color: #454554; font-size: 16px; line-height: 1.75; }
+body.portfolio-case-vhr .vhr-research-actions { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 32px; margin-top: 40px; }
+body.portfolio-case-vhr .vhr-research-actions :is(h3,h4) { margin: 12px 0 8px; font-size: 22px; line-height: 1.5; }
+body.portfolio-case-vhr .vhr-research-takeaway { display: flex; gap: 24px; align-items: baseline; margin: 32px 0 0; padding: 24px; background: #eaf0ff; border-radius: 16px; font-size: 18px; line-height: 1.6; }
+body.portfolio-case-vhr .vhr-research-takeaway strong { flex: none; color: #1b55f5; font-size: 14px; }
+body.portfolio-case-vhr .vhr-research-flow { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 16px; margin-top: 32px; padding: 24px; border-radius: 16px; background: #d2f0e3; font-size: 16px; line-height: 1.6; }
+body.portfolio-case-vhr .vhr-flow-condition { font-size: 14px; color: #36574a; }
+body.portfolio-case-vhr .vhr-research-flow p { flex-basis: 100%; margin: 0; font-size: 14px; color: #36574a; line-height: 1.6; }
+body.portfolio-case-vhr .vhr-research-roles { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; margin-top: 32px; }
+body.portfolio-case-vhr .vhr-research-roles article { padding: 24px; border-radius: 16px; background: #f4f4f6; }
+body.portfolio-case-vhr .vhr-research-roles h3 { margin: 16px 0 8px; font-size: 24px; line-height: 1.5; }
+body.portfolio-case-vhr .vhr-research-role-goal { display: block; font-size: 16px; line-height: 1.6; }
+body.portfolio-case-vhr .vhr-research-roles dl { margin: 24px 0 0; display: grid; gap: 20px; }
+body.portfolio-case-vhr .vhr-research-roles dt { font-size: 12px; line-height: 1.6; color: #67677e; }
+body.portfolio-case-vhr .vhr-research-roles dd { margin: 4px 0 0; color: #454554; font-size: 16px; line-height: 1.6; }
+body.portfolio-case-vhr .vhr-research-design { margin-top: 40px; padding-top: 32px; border-top: 1px solid #d8d8df; }
+body.portfolio-case-vhr .vhr-research-design > h3 { margin: 0; font-size: 24px; line-height: 1.5; }
+body.portfolio-case-vhr .vhr-research-design .vhr-research-actions { margin-top: 24px; }
+@media (max-width: 1100px) {
+  body.portfolio-case-vhr .vhr-research-inner h2 { font-size: 32px; }
+  body.portfolio-case-vhr .vhr-research-evidence { gap: 32px; }
+  body.portfolio-case-vhr .vhr-research-findings h3 { font-size: 22px; }
+  body.portfolio-case-vhr .vhr-research-roles { gap: 16px; }
+  body.portfolio-case-vhr .vhr-research-roles article { padding: 20px; }
+  body.portfolio-case-vhr .vhr-research-roles h3 { font-size: 22px; }
+}
+@media (max-width: 700px) {
+  body.portfolio-case-vhr .vhr-research-inner { width: calc(100% - 40px); padding: 48px 0; }
+  body.portfolio-case-vhr .vhr-research-inner h2 { font-size: 28px; }
+  body.portfolio-case-vhr .vhr-research-lede { font-size: 16px; margin-top: 16px; }
+  body.portfolio-case-vhr .vhr-research-evidence { grid-template-columns: 1fr; gap: 16px; margin-top: 24px; }
+  body.portfolio-case-vhr .vhr-research-actions { grid-template-columns: 1fr; gap: 24px; margin-top: 24px; }
+  body.portfolio-case-vhr .vhr-research-actions :is(h3,h4) { font-size: 20px; margin-top: 8px; }
+  body.portfolio-case-vhr .vhr-research-takeaway { flex-direction: column; gap: 8px; margin-top: 24px; padding: 20px; font-size: 16px; }
+  body.portfolio-case-vhr .vhr-research-roles { grid-template-columns: 1fr; margin-top: 24px; }
+  body.portfolio-case-vhr .vhr-research-roles dl { gap: 16px; }
+  body.portfolio-case-vhr .vhr-research-flow { display: grid; grid-template-columns: 1fr; gap: 8px; padding: 20px; margin-top: 24px; }
+  body.portfolio-case-vhr .vhr-research-flow > span[aria-hidden] { display: none; }
+  body.portfolio-case-vhr .vhr-research-flow > p { margin-top: 8px; }
+  body.portfolio-case-vhr .vhr-research-design { margin-top: 32px; padding-top: 24px; }
+  body.portfolio-case-vhr .vhr-research-design > h3 { font-size: 22px; }
+}
+
+/* Research-to-solution bridge and delivery narrative. */
+body.portfolio-case-vhr #paths.vhr-research-section { height:auto !important; min-height:0; padding:0; overflow:visible; background:#fff; }
+body.portfolio-case-vhr .vhr-narrative-note { margin:12px 0 0; font-size:16px; line-height:1.75; color:#454554; }
+body.portfolio-case-vhr .vhr-design-links { margin-top:24px; }
+body.portfolio-case-vhr .vhr-design-links article { display:grid; grid-template-columns:140px minmax(0,1fr) 200px; gap:24px; align-items:baseline; padding:20px 0; border-bottom:1px solid #d8d8df; }
+body.portfolio-case-vhr .vhr-design-links h4 { margin:0; font-size:20px; line-height:1.5; }
+body.portfolio-case-vhr .vhr-design-links p { margin:0; font-size:16px; line-height:1.75; color:#454554; }
+body.portfolio-case-vhr .vhr-design-links span { color:#1b55f5; font-size:14px; line-height:1.6; }
+body.portfolio-case-vhr .vhr-review-materials { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; margin-top:32px; padding:32px; border-radius:16px; background:#f4f4f6; }
+body.portfolio-case-vhr .vhr-review-materials h3 { margin:0 0 12px; font-size:20px; line-height:1.5; }
+body.portfolio-case-vhr .vhr-review-materials p { margin:0; color:#454554; font-size:16px; line-height:1.75; }
+body.portfolio-case-vhr .vhr-delivery-schedule { margin-top:40px; }
+body.portfolio-case-vhr .vhr-delivery-schedule > h3 { margin:0; font-size:24px; line-height:1.5; text-wrap:balance; }
+body.portfolio-case-vhr #paths .vhr-delivery-compare { position:static; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; width:auto; margin:24px 0 0; }
+body.portfolio-case-vhr #paths .vhr-delivery-compare article { width:auto; height:auto; min-height:0; padding:24px; box-sizing:border-box; }
+body.portfolio-case-vhr #paths .vhr-delivery-compare h3 { font-size:24px; margin-top:16px; }
+body.portfolio-case-vhr #paths .vhr-delivery-bars { position:relative; inset:auto; width:100%; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:16px auto; gap:12px; margin-top:48px; }
+body.portfolio-case-vhr #paths .is-after .vhr-delivery-bars { grid-template-columns:repeat(3,minmax(0,1fr)); }
+body.portfolio-case-vhr #paths .vhr-delivery-footnote { position:static; width:auto; margin:16px 0 0; font-size:12px; line-height:1.6; }
+body.portfolio-case-vhr .vhr-narrative-resource { display:flex; gap:32px; align-items:baseline; margin-top:32px; }
+body.portfolio-case-vhr .vhr-narrative-resource strong { flex:none; font-size:20px; line-height:1.5; }
+body.portfolio-case-vhr .vhr-narrative-resource p { margin:0; font-size:16px; line-height:1.75; color:#454554; }
+@media(max-width:1100px) {
+  body.portfolio-case-vhr .vhr-design-links article { grid-template-columns:112px minmax(0,1fr); gap:12px 24px; }
+  body.portfolio-case-vhr .vhr-design-links span { grid-column:2; }
+  body.portfolio-case-vhr .vhr-review-materials { gap:24px; padding:24px; }
+  body.portfolio-case-vhr #paths .vhr-delivery-compare h3 { font-size:20px; }
+  body.portfolio-case-vhr #paths .vhr-delivery-compare br { display:none; }
+}
+@media(max-width:700px) {
+  body.portfolio-case-vhr .vhr-design-links article { grid-template-columns:1fr; gap:8px; }
+  body.portfolio-case-vhr .vhr-design-links span { grid-column:auto; }
+  body.portfolio-case-vhr .vhr-review-materials { grid-template-columns:1fr; padding:24px; }
+  body.portfolio-case-vhr .vhr-delivery-schedule { margin-top:32px; }
+  body.portfolio-case-vhr .vhr-delivery-schedule > h3 { font-size:22px; }
+  body.portfolio-case-vhr #paths .vhr-delivery-compare { grid-template-columns:1fr; gap:16px; }
+  body.portfolio-case-vhr .vhr-narrative-resource { flex-direction:column; gap:8px; margin-top:24px; }
+}
+
+/* Keep the original A/B composition; C/D follow their reading order. */
+body.portfolio-case-vhr #design { height:auto !important; overflow:visible; }
+body.portfolio-case-vhr .vhr-fidelity-solution-inner { height:auto !important; padding-bottom:64px; }
+body.portfolio-case-vhr .vhr-solution-later { padding-top:1454px; }
+body.portfolio-case-vhr .vhr-solution-later > :is(.vhr-solution-copy,.vhr-solution-evidence,.vhr-solution-d-notes,.vhr-solution-footnote,.vhr-solution-c-change) { position:static !important; inset:auto !important; width:100% !important; height:auto !important; }
+body.portfolio-case-vhr .vhr-solution-later .vhr-solution-copy { max-width:960px; }
+body.portfolio-case-vhr .vhr-solution-later .vhr-solution-evidence { margin-top:32px; border:1px solid #d8d8df; border-radius:16px; }
+body.portfolio-case-vhr .vhr-solution-later .vhr-solution-evidence :is(a,img) { height:auto; width:100%; }
+body.portfolio-case-vhr .vhr-solution-later .vhr-solution-d-notes { margin-top:24px; grid-template-columns:repeat(3,minmax(0,1fr)); }
+body.portfolio-case-vhr .vhr-solution-later .vhr-solution-footnote { margin-top:24px; }
+body.portfolio-case-vhr .vhr-solution-later .vhr-solution-c-copy { margin-top:64px; }
+body.portfolio-case-vhr .vhr-solution-later .vhr-solution-c-change { margin-top:24px; }
+@media(max-width:1279px) {
+ body.portfolio-case-vhr .vhr-solution-later { padding-top:0; margin-top:40px; }
+}
+@media(max-width:700px) {
+ body.portfolio-case-vhr .vhr-solution-later .vhr-solution-d-notes { grid-template-columns:1fr; gap:24px; }
+ body.portfolio-case-vhr .vhr-solution-later .vhr-solution-c-copy { margin-top:48px; }
+ body.portfolio-case-vhr .vhr-solution-later .vhr-solution-evidence { margin-top:24px; }
+}
+
+/* Final chapter: completed validation work and clearly separated future retesting. */
+body.portfolio-case-vhr #verification.vhr-validation-close { height:auto !important; min-height:0; padding:0; overflow:visible; background:#f4f4f6; color:#101014; }
+body.portfolio-case-vhr .vhr-validation-phases { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; padding:0; margin:32px 0 0; list-style:none; }
+body.portfolio-case-vhr .vhr-validation-phases li { min-width:0; padding:24px; background:#fff; border-radius:16px; }
+body.portfolio-case-vhr .vhr-validation-phases span { color:#1b55f5; font-size:14px; line-height:1.6; }
+body.portfolio-case-vhr .vhr-validation-phases h3 { font-size:20px; line-height:1.5; margin:12px 0; }
+body.portfolio-case-vhr .vhr-validation-phases p { margin:0; color:#454554; font-size:16px; line-height:1.75; }
+body.portfolio-case-vhr .vhr-validation-evidence { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:40px; align-items:center; margin-top:40px; }
+body.portfolio-case-vhr .vhr-validation-photo { margin:0; min-width:0; }
+body.portfolio-case-vhr .vhr-validation-photo img { display:block; width:100%; height:auto; border-radius:16px; }
+body.portfolio-case-vhr .vhr-validation-photo figcaption { margin-top:12px; color:#67677e; font-size:12px; line-height:1.6; }
+body.portfolio-case-vhr .vhr-validation-perspectives h3 { margin:0; font-size:24px; line-height:1.5; text-wrap:balance; }
+body.portfolio-case-vhr .vhr-validation-perspectives dl { margin:24px 0 0; display:grid; gap:16px; }
+body.portfolio-case-vhr .vhr-validation-perspectives dl > div { display:grid; grid-template-columns:80px minmax(0,1fr); gap:16px; }
+body.portfolio-case-vhr .vhr-validation-perspectives dt { font-size:14px; font-weight:600; line-height:1.75; }
+body.portfolio-case-vhr .vhr-validation-perspectives dd { margin:0; color:#454554; font-size:14px; line-height:1.75; }
+body.portfolio-case-vhr .vhr-validation-dimensions { margin:24px 0 0; font-size:12px; color:#67677e; line-height:1.75; }
+body.portfolio-case-vhr #validation.vhr-validation-next { height:auto; padding:0; margin:40px 0 0; scroll-margin-top:88px; }
+body.portfolio-case-vhr .vhr-validation-next h3 { margin:0; font-size:20px; line-height:1.5; text-wrap:balance; }
+body.portfolio-case-vhr .vhr-validation-next > p { margin:12px 0 0; color:#454554; font-size:14px; line-height:1.75; }
+body.portfolio-case-vhr .vhr-validation-tasks { margin:24px 0 0; }
+body.portfolio-case-vhr .vhr-validation-tasks > div { display:grid; grid-template-columns:160px minmax(0,1fr); gap:24px; padding:16px 0; border-bottom:1px solid #d8d8df; }
+body.portfolio-case-vhr .vhr-validation-tasks dt { font-size:16px; line-height:1.6; font-weight:600; }
+body.portfolio-case-vhr .vhr-validation-tasks dd { margin:0; font-size:14px; line-height:1.75; }
+body.portfolio-case-vhr .vhr-validation-tasks span { display:inline; margin-left:8px; font-size:14px; color:#454554; }
+body.portfolio-case-vhr .vhr-validation-scope { margin:24px 0 0; font-size:12px; line-height:1.75; color:#67677e; }
+body.portfolio-case-vhr .vhr-validation-value { display:flex; gap:24px; align-items:baseline; margin:32px 0 0; padding:24px; border-radius:16px; background:#eaf0ff; font-size:18px; line-height:1.6; }
+body.portfolio-case-vhr .vhr-validation-value strong { flex:none; font-size:14px; color:#1b55f5; }
+@media(max-width:1000px) {
+ body.portfolio-case-vhr .vhr-validation-phases { gap:16px; }
+ body.portfolio-case-vhr .vhr-validation-phases li { padding:20px; }
+ body.portfolio-case-vhr .vhr-validation-evidence { gap:24px; }
+ body.portfolio-case-vhr .vhr-validation-perspectives h3 { font-size:22px; }
+}
+@media(max-width:700px) {
+ body.portfolio-case-vhr :is(.vhr-validation-phases,.vhr-validation-evidence) { grid-template-columns:1fr; margin-top:24px; }
+ body.portfolio-case-vhr .vhr-validation-next h3 { font-size:20px; }
+ body.portfolio-case-vhr .vhr-validation-tasks > div { grid-template-columns:1fr; gap:8px; }
+ body.portfolio-case-vhr .vhr-validation-value { flex-direction:column; gap:8px; font-size:16px; }
+}
+
+body.portfolio-case-vhr .vhr-validation-title-part { display:inline-block; }
+
+/* Keep a clear pause between stacked solution stories. */
+@media(max-width:1279px) {
+ body.portfolio-case-vhr .vhr-solution-b-copy { margin-top:48px; }
+}
+
+/* Recruitment reading: keep the design problem as readable as the solution. */
+body.portfolio-case-vhr #design .vhr-solution-problem { margin-top:16px; font-size:16px; line-height:1.75; color:#454554; }
+body.portfolio-case-vhr #design .vhr-solution-index { font-size:12px; line-height:1.5; }
+body.portfolio-case-vhr #design .vhr-solution-change { margin-top:24px; font-size:14px; line-height:1.75; color:#454554; }
+@media(max-width:700px) {
+ body.portfolio-case-vhr #overview .vhr-fidelity-copy h1 { font-size:30px !important; line-height:40px; text-wrap:balance; }
+ body.portfolio-case-vhr #design .vhr-solution-problem br { display:none; }
+}
+@media(max-width:700px) {
+ body.portfolio-case-vhr #design .vhr-solution-copy h3 { text-wrap:balance; }
+}
+
+body.portfolio-case-vhr #design .vhr-solution-title-part { display:inline-block; }

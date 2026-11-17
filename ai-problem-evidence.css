@@ -1,0 +1,48 @@
+/* Current research evidence; content determines height at every viewport. */
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context.ai-problem-evidence {
+  display: block; box-sizing: border-box; height: auto !important; min-height: 0 !important;
+  padding: 40px max(32px, calc((100% - 1200px) / 2)); overflow: visible; background: #f8faff;
+}
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context.ai-problem-evidence > .ai-problem-inner {
+  position: static; width: 100%; max-width: 1200px; height: auto; margin: 0 auto; padding: 0; zoom: 1;
+}
+#context.ai-problem-evidence .ai-problem-heading { margin: 0 0 24px; }
+#context.ai-problem-evidence .ai-problem-heading .case-v2-label { margin: 0 0 12px; }
+body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context.ai-problem-evidence h2 {
+  margin: 0 0 16px; font-size: 36px; line-height: 1.4; color: #192c48; font-weight: 600; text-wrap: balance;
+}
+#context.ai-problem-evidence h2 span { color: #0a59f7; }
+#context.ai-problem-evidence .ai-problem-intro { max-width: 960px; margin: 0; color: #526783; font-size: 16px; line-height: 1.75; }
+#context.ai-problem-evidence .ai-problem-row {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 560px); gap: 48px; align-items: center;
+  padding: 16px 0; border-top: 1px solid #d5e1f1;
+}
+#context.ai-problem-evidence .ai-problem-index { margin: 0 0 8px; color: #0a59f7; font-size: 12px; line-height: 1.6; letter-spacing: .04em; }
+#context.ai-problem-evidence .ai-problem-copy h3 { margin: 0 0 8px; font-size: 24px; line-height: 1.5; color: #192c48; font-weight: 600; }
+#context.ai-problem-evidence .ai-problem-copy > p:last-child { margin: 0; color: #526783; font-size: 16px; line-height: 1.75; text-wrap: pretty; }
+#context.ai-problem-evidence .ai-problem-images { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; min-width: 0; }
+#context.ai-problem-evidence figure { margin: 0; min-width: 0; }
+#context.ai-problem-evidence .ai-image-link { height: auto; position: relative; border: 1px solid #d5e1f1; border-radius: 8px; overflow: hidden; background: #fff; }
+#context.ai-problem-evidence .ai-image-link img { display: block; position: static; width: 100%; height: auto; max-width: 100%; object-fit: contain; margin: 0; }
+#context.ai-problem-evidence figcaption { margin: 8px 0 0; padding: 0; font-size: 14px; line-height: 1.6; color: #526783; }
+#context.ai-problem-evidence .ai-problem-source-note { margin: 0; padding: 16px 0 0; border-top: 1px solid #d5e1f1; font-size: 12px; line-height: 1.75; color: #526783; }
+#context.ai-problem-evidence .ai-problem-takeaway { margin: 24px auto 0; max-width: 960px; text-align: center; }
+#context.ai-problem-evidence .ai-problem-takeaway h3 { margin: 0 0 8px; color: #192c48; font-size: 24px; line-height: 1.6; font-weight: 600; text-wrap: balance; }
+#context.ai-problem-evidence .ai-problem-takeaway > p:last-child { margin: 0; color: #526783; font-size: 16px; line-height: 1.75; }
+@media (min-width: 701px) and (max-width: 1000px) {
+  #context.ai-problem-evidence .ai-problem-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 24px; }
+}
+@media (max-width: 700px) {
+  #context.ai-problem-evidence .ai-problem-row { grid-template-columns: 1fr; gap: 24px; }
+  #context.ai-problem-evidence .ai-problem-images { max-width: 820px; }
+}
+@media (max-width: 620px) {
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context.ai-problem-evidence { padding: 40px 20px; }
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context.ai-problem-evidence h2 { font-size: 30px; line-height: 1.4; }
+  #context.ai-problem-evidence .ai-problem-heading { margin-bottom: 24px; }
+  #context.ai-problem-evidence .ai-problem-images { grid-template-columns: 1fr; gap: 16px; width: min(100%, 280px); margin-inline: auto; }
+  #context.ai-problem-evidence .ai-problem-copy h3 { font-size: 20px; }
+  #context.ai-problem-evidence .ai-problem-takeaway { text-align: left; margin-top: 24px; }
+  #context.ai-problem-evidence .ai-problem-takeaway h3 { font-size: 20px; }
+  #context.ai-problem-evidence .ai-problem-takeaway h3 br { display: none; }
+}

@@ -1,0 +1,2850 @@
+/* Final cross-case fidelity pass: page-specific canvas widths and image crops. */
+.portfolio-case-ai { --portfolio-case-width: 1200px; }
+.portfolio-case-developer { --portfolio-case-width: 1200px; }
+.portfolio-case-vhr { --portfolio-case-width: 1200px; }
+
+@media (min-width: 901px) {
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 .portfolio-header {
+    position: fixed !important;
+    inset: 0 0 auto;
+  }
+
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview {
+    height: 730px !important;
+    min-height: 730px !important;
+    padding-top: 142px;
+  }
+  .portfolio-case-ai #role { height: 665px !important; }
+  .portfolio-case-ai #arc { height: 808px !important; }
+  .portfolio-case-ai #context { height: 880px !important; }
+  .portfolio-case-ai #foundation { height: 774px !important; }
+  .portfolio-case-ai #strategy { height: 679px !important; }
+  .portfolio-case-ai #strategy > * {
+    width: 125%;
+    max-width: 1500px;
+    margin-inline: auto;
+    zoom: .8;
+  }
+  .portfolio-case-ai #design-delivery {
+    height: 5645px !important;
+    min-height: 0 !important;
+    overflow: hidden;
+  }
+  .portfolio-case-ai #design-delivery > * {
+    width: 106.383%;
+    max-width: 1276.6px;
+    margin-inline: auto;
+    zoom: .94;
+  }
+  .portfolio-case-ai #delivery { height: 918px !important; }
+  .portfolio-case-ai #evolution { height: 2470px !important; }
+  .portfolio-case-ai #evolution > * {
+    width: 113.636%;
+    max-width: 1363.6px;
+    margin-inline: auto;
+    zoom: .88;
+  }
+  .portfolio-case-ai #value { height: 532px !important; }
+  .portfolio-case-ai #case-footer { min-height: 340px; height: 340px; }
+
+  .portfolio-case-developer #case-footer {
+    min-height: 314.25px;
+    height: 314.25px;
+    padding: 59px var(--portfolio-case-gutter) 48px;
+  }
+
+  .portfolio-case-developer .dc-hero-chapter {
+    height: 1094.75px;
+    padding: 70px 0 0;
+  }
+
+  .portfolio-case.portfolio-case-developer.developer-case .dc-hero-title {
+    margin-top: 0 !important;
+    font-size: 48px !important;
+    line-height: 1.2 !important;
+  }
+
+  .portfolio-case-developer .dc-hero-lede {
+    margin-top: 55.3px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .portfolio-case-developer .dc-hero-actions {
+    margin-top: 31.5px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .portfolio-case-developer .dc-hero-primary {
+    min-width: 152.25px;
+    height: 40.5px;
+  }
+
+  .portfolio-case-developer .dc-hero-showcase { margin-top: 28.5px; }
+  .portfolio-case-developer .dc-hero-meta {
+    gap: 28.5px;
+    margin-top: 64.5px;
+  }
+  .portfolio-case-developer .dc-hero-meta dt { font-size: 12px; line-height: 18px; }
+  .portfolio-case-developer .dc-hero-meta dd { margin-top: 7.5px; font-size: 14px; line-height: 21px; }
+
+  .portfolio-case-developer .dc-platform-section {
+    height: 1432.5px;
+    padding-top: 67px;
+  }
+  .portfolio-case-developer .dc-platform-heading h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .portfolio-case-developer .dc-platform-heading p {
+    margin-top: 27px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .portfolio-case-developer .dc-platform-feature-grid { margin-top: 51px; }
+  .portfolio-case-developer .dc-platform-detail h3 { font-size: 20px; line-height: 30px; }
+  .portfolio-case-developer .dc-platform-detail p { margin-top: 16.5px; font-size: 16px; line-height: 24px; }
+
+  .portfolio-case.portfolio-case-developer.developer-case .f-section h2 { line-height: 1.2; }
+  .portfolio-case-developer .f-section-heading p { font-size: 20px; line-height: 30px; }
+  .portfolio-case-developer #figma-02 .f-stage-grid { margin-top: 85.5px; }
+  .portfolio-case-developer #figma-03 .f-section-heading p { margin-top: 28.5px; }
+  .portfolio-case-developer #figma-03 .f-research-grid { margin-top: 58.5px; }
+  .portfolio-case-developer #figma-03 .f-research-card { height: 350px; }
+  .portfolio-case-developer #figma-03 .f-research-card h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .portfolio-case-developer #figma-03 .f-research-lede {
+    margin: 9px 0 0;
+    font-size: 16px;
+    line-height: 25.5px;
+  }
+  .portfolio-case-developer #figma-03 .f-research-evidence { margin-top: 22.5px; }
+  .portfolio-case-developer #figma-03 .f-research-note {
+    margin: 18px 0 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .portfolio-case-developer #figma-04 > .f-inner > p { margin-top: 49.5px; font-size: 18px; line-height: 27px; }
+  .portfolio-case-developer #figma-04 .f-journey-image { margin-top: 43.5px; }
+  .portfolio-case-developer #figma-05 .f-strategy-grid { margin-top: 79.5px; }
+  .portfolio-case-developer #figma-061 .f-two-line > p { margin-top: 46.5px; }
+  .portfolio-case-developer #figma-062 .f-support-card { margin-top: 91.5px; }
+  .portfolio-case-developer #figma-063 .f-two-line > p { margin-top: 46.5px; }
+  .portfolio-case-developer #figma-063 .f-admin-card { margin-top: 40.5px; }
+  .portfolio-case-developer #figma-07 .f-more-grid { margin-top: 79.5px; }
+  .portfolio-case-developer #figma-08 .f-two-line > p { margin-top: 43.5px; }
+  .portfolio-case-developer #figma-08 .f-reflection-grid { margin-top: 40.5px; }
+
+  .portfolio-case-developer .portfolio-case-footer-kicker {
+    gap: 9px;
+    font-size: 8.25px;
+    line-height: 10px;
+  }
+  .portfolio-case-developer .portfolio-case-footer-kicker i {
+    width: 4.5px;
+    height: 4.5px;
+  }
+  .portfolio-case-developer .portfolio-case-next {
+    height: 110px;
+    min-height: 110px;
+    margin-top: 22.5px;
+    padding: 0;
+  }
+  .portfolio-case-developer .portfolio-case-next > span { gap: 9px; }
+  .portfolio-case-developer .portfolio-case-next small { font-size: 9.75px; line-height: 18px; }
+  .portfolio-case-developer .portfolio-case-next strong { font-size: 40px; line-height: 52px; }
+  .portfolio-case-developer .portfolio-case-next em { font-size: 12px; line-height: 22px; }
+  .portfolio-case-developer .portfolio-case-next b {
+    width: 42px;
+    height: 42px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+  .portfolio-case-developer .portfolio-case-footer-meta {
+    height: 41.25px;
+    margin-top: 22.5px;
+    padding-top: 22.25px;
+    font-size: 9.75px;
+    line-height: 18px;
+  }
+}
+
+/* Intermediate-width pages must reflow instead of retaining the 1440px
+   screenshot heights and zoom compensation used by the desktop audit. */
+@media (min-width: 901px) and (max-width: 1279px) {
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview,
+  .portfolio-case-ai #role,
+  .portfolio-case-ai #arc,
+  .portfolio-case-ai #foundation,
+  .portfolio-case-ai #strategy,
+  .portfolio-case-ai #delivery,
+  .portfolio-case-ai #evolution {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible;
+  }
+
+  .portfolio-case-ai #strategy > *,
+  .portfolio-case-ai #evolution > * {
+    width: 100%;
+    max-width: 100%;
+    zoom: 1;
+  }
+}
+
+.portfolio-case-developer .dc-hero-inner,
+.portfolio-case-developer .dc-platform-inner,
+.portfolio-case-developer .f-inner {
+  width: min(1200px, calc(100% - 64px));
+  max-width: 1200px;
+}
+
+.portfolio-case-developer .dc-platform-community-crops img,
+.portfolio-case-developer .f-community-home img,
+.portfolio-case-developer .f-community-editor img,
+.portfolio-case-developer .f-community-qa img,
+.portfolio-case-developer .f-community-topics img {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.portfolio-case-vhr .vhr-fidelity-insight-photo img,
+.portfolio-case-vhr .vhr-solution-evidence img,
+.portfolio-case-vhr .vhr-verification-field img,
+.portfolio-case-vhr .vhr-verification-iterations figure img {
+  image-rendering: auto;
+}
+
+@media (min-width: 1921px) {
+  .portfolio-case-ai,
+  .portfolio-case-developer,
+  .portfolio-case-vhr { font-size: 16px; }
+}
+
+@media (max-width: 900px) {
+  .portfolio-case-developer .dc-hero-inner,
+  .portfolio-case-developer .dc-platform-inner,
+  .portfolio-case-developer .f-inner {
+    width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 620px) {
+  .portfolio-case-developer .dc-hero-inner,
+  .portfolio-case-developer .dc-platform-inner,
+  .portfolio-case-developer .f-inner {
+    width: calc(100% - 32px);
+  }
+}
+
+/* AI Case / system-asset insight: keep the label and sentence on one text flow. */
+.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-insight {
+  display: block;
+}
+
+.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-insight strong {
+  display: inline;
+}
+
+/* AI Case / 07 delivery: calibrated to Figma frame 88:613. */
+@media (min-width: 1280px) {
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery {
+    box-sizing: border-box;
+    height: 918.111px !important;
+    padding: 83.544px 0;
+    overflow: hidden;
+    background: linear-gradient(118.13deg, #fff 7.63%, #fbfcff 50%, #f5f2ff 92.37%);
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery > * {
+    width: 1200px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery > .case-v2-label {
+    height: 13px;
+    font-size: 10.443px;
+    line-height: 13px;
+    letter-spacing: 1.044px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery > .delivery-intro {
+    grid-template-columns: 744.304px 370.253px;
+    gap: 85.443px;
+    align-items: end;
+    height: 104px;
+    margin: 26.582px auto 41.772px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery > .delivery-intro h2 {
+    width: 744.304px;
+    font-size: 40px;
+    line-height: 1.3;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery > .delivery-intro > p {
+    width: 370.253px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery > .delivery-layout {
+    grid-template-columns: 455.696px 683.544px;
+    gap: 60.759px;
+    height: 409.731px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery .delivery-points {
+    gap: 24.684px;
+    width: 455.696px;
+    height: 340.835px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery .delivery-points li {
+    grid-template-columns: 18.987px 419.62px;
+    gap: 17.089px;
+    width: 455.696px;
+    height: 66.696px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery .delivery-check {
+    width: 18.987px;
+    height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery .delivery-points li > div {
+    gap: 5.696px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery .delivery-points strong {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery .delivery-points p {
+    font-size: 14px;
+    line-height: 25.2px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery .delivery-evidence {
+    gap: 3.797px;
+    width: 683.544px;
+    height: 409.731px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery .delivery-evidence img {
+    width: 637.975px;
+    height: 384.933px;
+    flex-basis: 384.933px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery .delivery-evidence figcaption {
+    width: 683.544px;
+    height: 21px;
+    font-size: 11.392px;
+    line-height: 20.506px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery > .delivery-validation {
+    align-items: center;
+    gap: 26.582px;
+    width: 1200px;
+    height: 114.165px;
+    margin-top: 41.772px !important;
+    padding: 22.785px 28.481px;
+    border: 1px solid #7ddddd;
+    border-radius: 13.291px;
+    background: linear-gradient(164.41deg, #e0f4fb 7.63%, #e3eafe 50%, #ece1fc 92.37%);
+    box-shadow: 0 4.747px 17.089px rgba(120, 117, 220, 0.07);
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery > .delivery-validation > img {
+    width: 22.785px;
+    height: 22.785px;
+    flex-basis: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery > .delivery-validation > div {
+    gap: 7.595px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery .delivery-validation strong {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #delivery .delivery-validation p {
+    font-size: 14px;
+    line-height: 25.2px;
+  }
+}
+
+/* The current Figma 2.0 chapter replaces the older duplicated AI-mechanism row. */
+.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-mechanism {
+  display: none !important;
+}
+
+/* AI Case / 08 continuous evolution: calibrated to Figma frame 88:657. */
+@media (min-width: 1280px) {
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution {
+    box-sizing: border-box;
+    height: 2469.962px !important;
+    padding: 83.544px max(40px, calc((100% - 1200px) / 2));
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 720px 1260px at 35% 96%, rgba(118, 166, 255, 0.16), rgba(118, 166, 255, 0) 70%),
+      linear-gradient(101.24deg, #eaf8fd 7.63%, #ebf0ff 50%, #f1ecff 92.37%);
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution > * {
+    width: 1200px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    zoom: 1;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution > .case-v2-label {
+    height: 13px;
+    font-size: 10.443px;
+    line-height: 13px;
+    letter-spacing: 1.044px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution > .case-v2-section-intro {
+    grid-template-columns: 744.304px 370.253px;
+    gap: 85.443px;
+    align-items: end;
+    height: 104px;
+    margin: 26.582px auto 53.165px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution > .case-v2-section-intro h2 {
+    width: 744.304px;
+    font-size: 40px;
+    line-height: 1.3;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution > .case-v2-section-intro > p {
+    width: 370.253px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-figma-chapter {
+    grid-template-columns: 161.392px 985.443px;
+    gap: 53.165px;
+    width: 1200px;
+    padding: 34.177px 0;
+    border-top-width: 1px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-figma-20 {
+    height: 1079.722px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-figma-30 {
+    height: 822.962px;
+    margin-top: 53.165px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-figma-version {
+    gap: 13.291px;
+    width: 161.392px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-figma-version span {
+    font-size: 48px;
+    line-height: 1.3;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-figma-version small {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-figma-body {
+    width: 985.443px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-20-body {
+    gap: 28.481px;
+    height: 1011.367px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-30-body {
+    gap: 26.582px;
+    height: 754.608px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-figma-body > h3 {
+    flex-basis: 84px;
+    height: 84px;
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-figma-lede {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-20-body > .evolution-figma-lede {
+    height: 29px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-30-body > .evolution-figma-lede {
+    height: 58px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-value-shift {
+    grid-template-columns: 459.494px 22.785px 457.595px;
+    gap: 22.785px;
+    width: 985.443px;
+    height: 108.165px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-value-shift article {
+    gap: 7.595px;
+    height: 108.165px;
+    padding: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-value-shift span {
+    font-size: 10.443px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-value-shift strong {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-value-shift img {
+    width: 22.785px;
+    height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-collaboration {
+    gap: 15.19px;
+    width: 985.443px;
+    height: 303.684px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-collaboration > span {
+    height: 19px;
+    font-size: 11.392px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-collaboration > h4 {
+    height: 35px;
+    font-size: 24px;
+    line-height: 34.177px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-collaboration-grid {
+    grid-template-columns: 318.038px 318.987px 318.987px;
+    gap: 15.19px;
+    height: 219.304px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-collaboration-grid article {
+    height: 219.304px;
+    padding: 18.987px;
+    border-radius: 9.494px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-collaboration-grid article > div {
+    gap: 13.291px;
+    height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-collaboration-grid span {
+    font-size: 11.392px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-collaboration-grid b {
+    flex-basis: 68.354px;
+    width: 68.354px;
+    height: 18.987px;
+    padding: 2.848px 7.595px;
+    font-size: 8.544px;
+    line-height: 11.392px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-collaboration-grid h5 {
+    margin-top: 13.291px;
+    font-size: 18px;
+    line-height: 28.481px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-collaboration-grid p {
+    margin-top: 13.291px;
+    font-size: 12px;
+    line-height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-collaboration-grid article > strong {
+    padding-top: 13.291px;
+    font-size: 12px;
+    line-height: 21.835px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-contribution {
+    gap: 17.089px;
+    width: 985.443px;
+    height: 258.443px;
+    padding-top: 17.089px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-contribution > span {
+    height: 19px;
+    font-size: 11.392px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-contribution > h4 {
+    height: 35px;
+    font-size: 20px;
+    line-height: 34.177px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-contribution > p {
+    height: 52px;
+    font-size: 14px;
+    line-height: 25.633px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-contribution dl {
+    grid-template-columns: repeat(2, 481.329px);
+    gap: 22.785px;
+    height: 83.139px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-contribution dl > div {
+    gap: 7.595px;
+    min-height: 83.139px;
+    padding-top: 7.595px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-contribution dt {
+    font-size: 12px;
+    line-height: 20.886px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-contribution dd {
+    font-size: 12px;
+    line-height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-boundary {
+    gap: 7.595px;
+    width: 985.443px;
+    height: 85.671px;
+    padding: 17.089px;
+    border-radius: 9.494px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-boundary strong {
+    font-size: 11.392px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-boundary p {
+    font-size: 12px;
+    line-height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-insight {
+    grid-template-columns: 493.671px 419.62px;
+    gap: 24.684px;
+    width: 991.139px;
+    height: 192.722px;
+    padding: 26.582px;
+    border-radius: 13.291px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-insight > div {
+    gap: 15.19px;
+    width: 493.671px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-insight span,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-insight dt {
+    font-size: 11.392px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-insight h4 {
+    font-size: 20px;
+    line-height: 34.177px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-insight small {
+    font-size: 11.392px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-insight dl {
+    gap: 15.19px;
+    width: 419.62px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-insight dl > div {
+    gap: 7.595px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-insight dl > div + div {
+    padding-top: 7.595px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-insight dd {
+    font-size: 12px;
+    line-height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-content-model {
+    gap: 15.19px;
+    width: 985.443px;
+    height: 290.557px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-content-model > span {
+    height: 19px;
+    font-size: 11.392px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-content-model > h4 {
+    height: 33px;
+    font-size: 20px;
+    line-height: 32.278px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-content-model > p {
+    height: 24px;
+    font-size: 14px;
+    line-height: 23.734px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-content-grid {
+    grid-template-columns: repeat(5, 187.975px);
+    gap: 11.392px;
+    width: 985.443px;
+    height: 168.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-content-grid article {
+    gap: 11.392px;
+    width: 187.975px;
+    height: 168.987px;
+    padding: 16.139px;
+    border-radius: 9.494px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-content-grid span {
+    font-size: 10.443px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-content-grid h5 {
+    font-size: 16px;
+    line-height: 25.633px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-content-grid p {
+    font-size: 12px;
+    line-height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-cocreation {
+    height: 23px;
+    font-size: 12px;
+    line-height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-figma-summary {
+    box-sizing: border-box;
+    gap: 34.177px;
+    width: 1200px;
+    height: 97.165px;
+    margin-top: 53.165px;
+    padding-top: 53.165px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-figma-summary img {
+    width: 34.177px;
+    height: 34.177px;
+    flex-basis: 34.177px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #evolution .evolution-figma-summary p {
+    font-size: 24px;
+    line-height: 43px;
+  }
+}
+
+/* AI Case / 09 reflection and ending: calibrated to Figma frame 88:782. */
+@media (min-width: 1280px) {
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value.figma-reflection {
+    box-sizing: border-box;
+    height: 531.835px !important;
+    padding: 83.544px max(40px, calc((100% - 1200px) / 2));
+    overflow: hidden;
+    background: linear-gradient(132.71deg, #fff 7.63%, #fbfcff 50%, #f5f2ff 92.37%);
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value > .case-v2-value-inner {
+    width: 1200px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value .case-v2-label {
+    height: 13px;
+    font-size: 10.443px;
+    line-height: 13px;
+    letter-spacing: 1.044px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value .reflection-lead {
+    grid-template-columns: 744.304px 370.253px;
+    gap: 85.443px;
+    align-items: end;
+    height: 104px;
+    margin-top: 26.582px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value .reflection-lead h2 {
+    width: 744.304px;
+    font-size: 40px;
+    line-height: 1.3;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value .reflection-lead p {
+    width: 370.253px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value .reflection-grid {
+    grid-template-columns: repeat(3, 374.684px);
+    gap: 37.975px;
+    width: 1200px;
+    height: 179.392px;
+    margin-top: 41.772px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value .reflection-grid article {
+    width: 374.684px;
+    padding-top: 20.886px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value .reflection-grid img {
+    width: 22.785px;
+    height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value .reflection-grid h3 {
+    margin: 20.886px 0;
+    font-size: 24px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #value .reflection-grid p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer {
+    box-sizing: border-box;
+    height: 339.506px !important;
+    min-height: 339.506px;
+    padding: 53.165px max(40px, calc((100% - 1200px) / 2));
+    overflow: hidden;
+    border-top: 0;
+    background:
+      radial-gradient(ellipse 720px 220px at 35% 100%, rgba(176, 152, 255, 0.16), rgba(176, 152, 255, 0) 70%),
+      linear-gradient(145.33deg, #eef3ff 7.63%, #f0edff 50%, #e8f8fc 92.37%);
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer .portfolio-case-footer-inner {
+    width: 1200px;
+    max-width: 1200px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer .portfolio-case-footer-kicker {
+    gap: 11.392px;
+    height: 13px;
+    font-size: 10.443px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 1.044px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer .portfolio-case-footer-kicker i {
+    width: 5.696px;
+    height: 5.696px;
+    flex: 0 0 5.696px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer .portfolio-case-next {
+    width: 1200px;
+    min-height: 111.785px;
+    height: 111.785px;
+    margin-top: 28.481px;
+    padding: 0;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer .portfolio-case-next > span {
+    gap: 11.392px;
+    width: 854.43px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer .portfolio-case-next small {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer .portfolio-case-next strong {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer .portfolio-case-next em {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer .portfolio-case-next b {
+    width: 53.165px;
+    height: 53.165px;
+    font-size: 53.165px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer .portfolio-case-footer-meta {
+    box-sizing: content-box;
+    height: 22px;
+    margin-top: 28.481px;
+    padding-top: 28.481px;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer .portfolio-case-footer-meta span {
+    font-size: 10.443px;
+    line-height: 1.8;
+  }
+}
+
+/* AI Case / 00 project cover: calibrated to Figma frame 88:26. The shared
+   compact navigation remains 64px; the case content keeps its 1200px grid. */
+@media (min-width: 1280px) {
+  body.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview {
+    height: 730px !important;
+    min-height: 730px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 52% 32% at 107% 32%, rgba(57, 213, 230, .18), transparent 72%),
+      radial-gradient(ellipse 64% 38% at 41% 81%, rgba(152, 115, 255, .22), transparent 72%),
+      linear-gradient(124deg, #e8f5ff 8%, #e5ebff 50%, #f0e7ff 92%);
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview > .case-v2-hero-grid {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 1200px !important;
+    max-width: 1200px !important;
+    height: 565.126px;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-hero-copy {
+    position: absolute;
+    top: 202.424px;
+    left: 0;
+    width: 586.709px;
+    height: 294.392px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-kicker {
+    position: absolute;
+    top: -121.475px;
+    left: 0;
+    width: max-content;
+    height: 40.823px;
+    margin: 0;
+    gap: 11.392px;
+    color: #5b6d85;
+    font-size: 10.443px;
+    line-height: 13px;
+    letter-spacing: 1.044px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-kicker span {
+    width: 5.696px;
+    height: 5.696px;
+    background: #0a59f7;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview h1 {
+    width: 586.709px;
+    height: 114px;
+    margin: 0;
+    font-size: 48px !important;
+    font-weight: 700;
+    line-height: 1.18 !important;
+    letter-spacing: -1.92px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-hero-claim {
+    width: 586.709px;
+    height: 36px;
+    margin: 26.582px 0 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-lede {
+    width: 586.709px;
+    max-width: none;
+    height: 58px;
+    margin: 7.595px 0 0;
+    color: #5b6d85;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-hero-capabilities {
+    width: 377.848px;
+    height: 25.633px;
+    margin: 26.582px 0 0;
+    gap: 9.494px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-hero-capabilities span {
+    height: 25.633px;
+    min-height: 25.633px;
+    padding: 3.797px 9.494px;
+    border-radius: 15.19px;
+    font-size: 12.342px;
+    line-height: 17.28px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-hero-capabilities span:nth-child(1) { flex-basis: 83.544px; }
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-hero-capabilities span:nth-child(2) { flex-basis: 92.089px; }
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-hero-capabilities span:nth-child(3) { flex-basis: 81.646px; }
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-hero-capabilities span:nth-child(4) { flex-basis: 92.089px; }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-hero-media {
+    position: absolute;
+    top: 174.771px;
+    left: 632.279px;
+    width: 567.721px;
+    height: 349.698px;
+    margin: 0;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview > .case-v2-facts {
+    box-sizing: border-box;
+    width: 1200px !important;
+    max-width: 1200px !important;
+    height: 114.456px;
+    margin: 0 auto !important;
+    padding: 28.481px 0 0;
+    grid-template-columns: 163.291px 347.468px 347.468px 227.848px;
+    gap: 37.975px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-facts div { gap: 9.494px; }
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-facts dt {
+    color: #5b6d85;
+    font-size: 10.443px;
+    line-height: 19px;
+  }
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #overview .case-v2-facts dd {
+    color: #435d84;
+    font-size: 16px;
+    line-height: 29px;
+  }
+}
+
+/* AI Case / 01 project responsibility: Figma frame 88:71. */
+@media (min-width: 1280px) {
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role {
+    box-sizing: border-box;
+    height: 665px !important;
+    padding: 83.544px 0;
+    gap: 37.975px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role > .role-figma-intro,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role > .figma-role-scope,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role > .figma-key-callout {
+    width: 1200px !important;
+    max-width: 1200px !important;
+    margin-inline: auto !important;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role > .role-figma-intro {
+    height: 143.582px;
+    gap: 26.582px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role .role-figma-intro > .case-v2-label {
+    font-size: 10.443px;
+    line-height: 13px;
+    letter-spacing: 1.044px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role .role-figma-intro > .case-v2-section-intro {
+    grid-template-columns: 744.304px 370.253px;
+    gap: 85.443px;
+    height: 104px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role .role-figma-intro > .case-v2-section-intro h2 {
+    width: 744.304px;
+    height: 104px;
+    font-size: 40px !important;
+    line-height: 1.3 !important;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role .role-figma-intro > .case-v2-section-intro > p {
+    width: 370.253px;
+    height: 87px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role > .figma-role-scope {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 37.975px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role > .figma-role-scope article {
+    min-height: 143px;
+    gap: 17.089px;
+    padding-top: 17.089px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role > .figma-role-scope img {
+    width: 22.785px;
+    height: 22.785px;
+    flex-basis: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role > .figma-role-scope h3 {
+    font-size: 24px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role > .figma-role-scope p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role > .figma-key-callout {
+    height: 110.367px;
+    gap: 26.582px;
+    padding: 22.785px 28.481px;
+    border-radius: 13.291px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role > .figma-key-callout > img {
+    width: 22.785px;
+    height: 22.785px;
+    flex-basis: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role > .figma-key-callout strong {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #role > .figma-key-callout p {
+    color: #5b6d85;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+/* AI Case / 02 project reframing: Figma frame 88:104. */
+@media (min-width: 1280px) {
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc {
+    box-sizing: border-box;
+    height: 808px !important;
+    padding: 83.544px 0;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc > * {
+    width: 1200px !important;
+    max-width: 1200px !important;
+    margin-inline: auto !important;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc > .case-v2-label {
+    font-size: 10.443px;
+    line-height: 13px;
+    letter-spacing: 1.044px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc > .case-v2-section-intro {
+    grid-template-columns: 744.304px 370.253px;
+    gap: 85.443px;
+    height: 58px;
+    margin-top: 26.582px !important;
+    margin-bottom: 37.975px !important;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc > .case-v2-section-intro h2 {
+    width: 744.304px;
+    height: 52px;
+    font-size: 40px !important;
+    line-height: 1.3 !important;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc > .case-v2-section-intro > p {
+    width: 370.253px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc > .project-arc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 17.089px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc .project-arc-item {
+    grid-template-columns: 531.646px 611.392px;
+    gap: 49.367px;
+    height: 136.709px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc .project-arc-core {
+    width: 531.646px;
+    height: 136.709px;
+    padding: 22.785px 28.481px;
+    border-radius: 11.392px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc .project-arc-version {
+    gap: 15.19px;
+    height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc .project-arc-version > span {
+    font-size: 28px;
+    line-height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc .project-arc-version > strong {
+    font-size: 11.392px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc .project-arc-problem {
+    gap: 5.696px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc .project-arc-problem h3 {
+    font-size: 20px;
+    line-height: 28.481px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc .project-arc-problem p {
+    font-size: 12px;
+    line-height: 20.886px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc .project-arc-evolution {
+    display: flex;
+    width: 611.392px;
+    height: 136.709px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7.595px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc .project-arc-evolution h3 {
+    font-size: 20px;
+    line-height: 30.38px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc .project-arc-evolution p {
+    font-size: 14px;
+    line-height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc .project-arc-evolution small {
+    font-size: 11.392px;
+    line-height: 17.089px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #arc > .project-arc-thesis {
+    height: 51.266px;
+    margin-top: 17.089px !important;
+    padding: 18.987px 0 7.595px;
+    font-size: 16px;
+    line-height: 24.684px;
+  }
+}
+
+/* AI Case / 03 real problem evidence: Figma frame 88:151. */
+@media (min-width: 1280px) {
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context {
+    box-sizing: border-box;
+    height: 880px !important;
+    padding: 0;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context > :is(
+    .final-problem-header,
+    .final-problem-research,
+    .final-problem-group-label,
+    .final-problem-grid,
+    .final-problem-insight
+  ) {
+    width: 1200px;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context > .final-problem-header {
+    height: 142.405px;
+    margin-top: 55.063px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-header > .case-v2-label {
+    gap: 11.392px;
+    height: 18px;
+    font-size: 11.392px;
+    line-height: 17.089px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-header > .case-v2-label::before {
+    width: 5.696px;
+    height: 5.696px;
+    flex-basis: 5.696px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-header > h2 {
+    margin-top: 24.721px;
+    font-size: 40px !important;
+    line-height: 59.81px !important;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-header > p {
+    margin-top: 10.253px;
+    font-size: 16px;
+    line-height: 24.684px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context > .final-problem-research {
+    height: 123.418px;
+    margin-top: 34.177px;
+    border-radius: 15.19px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-card-label {
+    top: 18.987px;
+    left: 26.582px;
+    font-size: 12px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-metric {
+    top: 12.342px;
+    gap: 3.797px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-metric-first { left: 246.835px; }
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-metric-second { left: 696.835px; }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-metric strong {
+    font-size: 40px;
+    line-height: 68.354px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-metric span {
+    font-size: 16px;
+    line-height: 25.633px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-divider {
+    top: 26.582px;
+    left: 644.62px;
+    height: 70.253px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context > .final-problem-group-label {
+    height: 19px;
+    margin-top: 37.975px;
+    font-size: 12px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context > .final-problem-grid {
+    grid-template-columns: repeat(3, 379.747px);
+    gap: 30.38px;
+    height: 187.975px;
+    margin-top: 16.139px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-card {
+    height: 187.975px;
+    padding: 19.937px 26.582px;
+    border-radius: 15.19px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-card-title {
+    gap: 15.19px;
+    height: 39.873px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-card-title img {
+    width: 22.785px;
+    height: 22.785px;
+    flex-basis: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-card-title h3 {
+    font-size: 24px;
+    line-height: 39.873px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-card > strong {
+    margin-top: 24.684px;
+    font-size: 20px;
+    line-height: 30.38px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-card > p {
+    margin-top: 11.392px;
+    font-size: 14px;
+    line-height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context > .final-problem-insight {
+    min-height: 121.165px;
+    margin-top: 55.063px;
+    padding: 22.785px 28.481px;
+    gap: 26.582px;
+    border-radius: 13.291px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-insight > img {
+    width: 34.177px;
+    height: 34.177px;
+    flex-basis: 34.177px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-insight > div { gap: 7.595px; }
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-insight p {
+    font-size: 14px;
+    line-height: 25.2px;
+  }
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #context .final-problem-insight h3 {
+    font-size: 24px;
+    line-height: 43.2px;
+  }
+}
+
+/* AI Case / 04 service foundation: calibrated to Figma frame 88:189.
+   The Figma frame is one continuous 1453.1px chapter. The existing markup
+   splits it into foundation and strategy sections, so their heights add up
+   to the original frame without scaling either section. */
+.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-service-layer {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation {
+    box-sizing: border-box;
+    height: 732.046px !important;
+    padding: 83.544px 0 0;
+    overflow: hidden;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation > :is(
+    .case-v2-label,
+    .foundation-intro,
+    .foundation-journeys
+  ) {
+    width: 1200px;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation > .case-v2-label {
+    font-size: 10.443px;
+    line-height: 13px;
+    letter-spacing: 1.044px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation > .foundation-intro {
+    grid-template-columns: 760.443px 354.114px;
+    gap: 85.443px;
+    align-items: end;
+    margin-top: 26.582px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-intro h2 {
+    width: 760.443px;
+    margin: 0;
+    font-size: 40px !important;
+    line-height: 1.4 !important;
+    letter-spacing: 0;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-intro > p {
+    width: 354.114px;
+    margin: 0;
+    color: #5b6d85;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation > .foundation-journeys {
+    height: 448.101px;
+    gap: 15.19px;
+    margin-top: 45.57px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-journey {
+    grid-template-columns: 281.013px minmax(0, 1fr);
+    gap: 22.785px;
+    padding: 22.785px;
+    border-radius: 11.392px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-journey-before {
+    height: 186.076px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-journey-after {
+    height: 205.063px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-journey-heading {
+    width: 281.013px;
+    padding-right: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-journey-heading > span {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    height: 22.785px;
+    padding: 0 7.595px;
+    font-size: 10.443px;
+    line-height: 17.089px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-journey-heading h3 {
+    margin-top: 7.595px;
+    font-size: 24px;
+    line-height: 34.177px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-journey-heading p,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-journey-after .foundation-journey-heading p {
+    max-width: 281.013px;
+    font-size: 12px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-journey-steps {
+    gap: 11.392px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-journey-steps li {
+    padding: 15.19px 17.089px;
+    border-radius: 7.595px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-journey-steps span {
+    font-size: 11.392px;
+    line-height: 17.089px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-journey-steps strong {
+    font-size: 16px;
+    line-height: 25.633px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-journey-steps small {
+    font-size: 12px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #foundation .foundation-shift {
+    height: 26.582px;
+    font-size: 12px;
+    line-height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy {
+    box-sizing: border-box;
+    height: 736.446px !important;
+    padding: 45.57px 0 83.544px;
+    overflow: hidden;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy > * {
+    width: 1200px;
+    max-width: 1200px;
+    margin-inline: auto;
+    zoom: 1;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-board {
+    box-sizing: border-box;
+    width: 1200px;
+    height: 450.962px;
+    gap: 22.785px;
+    padding: 34.177px;
+    border-radius: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-board-head {
+    height: 55px;
+    min-height: 55px;
+    flex-basis: 55px;
+    padding-bottom: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-board-head h2 {
+    font-size: 18px;
+    line-height: 32.4px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-board-head p {
+    width: 273.418px;
+    margin: 0;
+    font-size: 10.443px;
+    line-height: 32.4px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-flow {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15.19px;
+    height: 304px;
+    min-height: 304px;
+    flex-basis: 304px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-flow > .strategy-step {
+    height: 304px;
+    min-height: 304px;
+    border-radius: 11.392px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-index {
+    top: 19.94px;
+    left: 18.04px;
+    width: calc(100% - 36.08px);
+    font-size: 9.494px;
+    line-height: 14.241px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-layer {
+    top: 44.62px;
+    left: 18.04px;
+    width: calc(100% - 36.08px);
+    font-size: 14px;
+    line-height: 25.633px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step h3,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-ai h3 {
+    top: 82.6px;
+    left: 18.04px;
+    width: calc(100% - 36.08px);
+    font-size: 16px;
+    line-height: 24.684px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-bottom {
+    top: 148.1px;
+    left: 18.04px;
+    width: calc(100% - 36.08px);
+    height: 143.544px;
+    padding-top: 14.241px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-bottom::before {
+    width: 100%;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-bottom > span,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-ai .strategy-step-bottom > span {
+    font-size: 10.443px;
+    line-height: 16.139px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-definition,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-ai .strategy-step-definition {
+    margin-top: 3.797px;
+    font-size: 12px;
+    line-height: 19.937px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-tags {
+    gap: 4.747px 5.696px;
+    margin-top: 11.392px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-tags li,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-step-ai .strategy-tags li {
+    height: 21.835px;
+    padding: 2.848px 7.595px;
+    font-size: 10.443px;
+    line-height: 16.139px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-conclusion {
+    box-sizing: border-box;
+    width: 1200px;
+    height: 110.367px;
+    margin-top: 45.57px;
+    padding: 22.785px 28.481px;
+    gap: 26.582px;
+    border: 1px solid #7ddddd;
+    border-radius: 13.291px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-conclusion > img {
+    width: 34.177px;
+    height: 34.177px;
+    flex-basis: 34.177px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-conclusion h3 {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #strategy .strategy-conclusion p {
+    font-size: 14px;
+    line-height: 25.2px;
+  }
+}
+
+/* AI Case / 05 key decisions: calibrated to Figma frame 88:326. */
+@media (min-width: 1280px) {
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #design-delivery {
+    box-sizing: border-box;
+    height: 5735.904px !important;
+    min-height: 0 !important;
+    padding: 83.544px 0;
+    overflow: hidden;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #design-delivery > * {
+    width: auto;
+    max-width: none;
+    margin-inline: auto;
+    zoom: 1;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions {
+    width: 1200px;
+    max-width: 1200px;
+    height: 2826.153px;
+    gap: 41.772px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decisions-intro {
+    height: 143.582px;
+    min-height: 143.582px;
+    flex: 0 0 143.582px;
+    gap: 26.582px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decisions-chapter-mark {
+    gap: 11.392px;
+    font-size: 10.443px;
+    line-height: 13px;
+    letter-spacing: 1.044px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decisions-chapter-mark > span {
+    width: 5.696px;
+    height: 5.696px;
+    flex-basis: 5.696px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decisions-intro-grid {
+    grid-template-columns: 744.304px 370.253px;
+    gap: 85.443px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decisions-intro-grid h2 {
+    width: 744.304px;
+    font-size: 40px !important;
+    line-height: 1.3 !important;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decisions-intro-grid > p {
+    width: 370.253px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-list {
+    gap: 41.772px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-item {
+    grid-template-columns: 379.747px 767.089px;
+    gap: 53.165px;
+    padding: 36.126px 0 0;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-item:nth-child(1) { height: 442.051px; }
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-item:nth-child(2) { height: 445.04px; }
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-item:nth-child(3) { height: 445.04px; }
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-item:nth-child(4) { height: 537.15px; }
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-item:nth-child(5) { height: 513.15px; }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-copy {
+    width: 379.747px;
+    gap: 17.089px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-index {
+    font-size: 12px;
+    line-height: 20.886px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-copy h3 {
+    width: 379.747px;
+    font-size: 28px;
+    line-height: 39.873px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-context {
+    width: 379.747px;
+    font-size: 14px;
+    line-height: 26.582px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-evidence {
+    width: 767.089px;
+    gap: 17.089px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-answer {
+    width: 767.089px;
+    gap: 9.494px;
+    padding: 18.987px 22.785px;
+    border-radius: 9.494px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-answer > span {
+    width: 721.519px;
+    font-size: 10.443px;
+    line-height: 17.089px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-answer h4 {
+    width: 721.519px;
+    font-size: 20px;
+    line-height: 32.278px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-answer p {
+    width: 721.519px;
+    font-size: 14px;
+    line-height: 23.734px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-tradeoff {
+    width: 767.089px;
+    font-size: 12px;
+    line-height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-option-grid {
+    grid-template-columns: repeat(2, 375.949px);
+    gap: 15.19px;
+    width: 767.089px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-option {
+    width: 375.949px;
+    gap: 13.291px;
+    padding: 17.089px;
+    border-radius: 9.494px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-option h4,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-option p,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .entry-diagram {
+    width: 341.772px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-option h4 {
+    font-size: 14px;
+    line-height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .entry-diagram {
+    height: 102.532px;
+    aspect-ratio: auto;
+    border-radius: 5.696px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-option p {
+    font-size: 12px;
+    line-height: 21.835px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence {
+    width: 767.089px;
+    gap: 11.392px;
+    padding: 11.392px;
+    border-radius: 9.494px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-crop,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence figcaption {
+    width: 743.354px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence figcaption {
+    gap: 15.19px;
+    font-size: 11.392px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions .decision-product-evidence figcaption strong {
+    font-size: 12px;
+    line-height: 20.886px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions + #interaction {
+    margin-top: 83.544px;
+  }
+}
+
+/* AI Case / 06 site-wide interaction and reusable system assets:
+   calibrated to Figma frame 88:475. */
+@media (min-width: 1280px) {
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions + #interaction {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    height: 992.13px;
+    gap: 68.354px;
+    margin-left: 0;
+    padding: 83.544px max(120px, calc((100% - 1200px) / 2)) 68.354px;
+    overflow: hidden;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-intro,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-intro-grid,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-framework,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-grid,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-conclusion {
+    width: 1200px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-intro {
+    height: 143.582px;
+    gap: 26.582px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-chapter-mark {
+    gap: 11.392px;
+    font-size: 10.443px;
+    line-height: 13px;
+    letter-spacing: 1.044px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-chapter-mark > span {
+    width: 5.696px;
+    height: 5.696px;
+    flex-basis: 5.696px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-intro-grid {
+    grid-template-columns: 744.304px 370.253px;
+    gap: 85.443px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-intro-grid h2 {
+    width: 744.304px;
+    font-size: 40px !important;
+    line-height: 1.3 !important;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-intro-grid > p {
+    width: 370.253px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-framework {
+    height: 628.295px;
+    gap: 37.975px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-grid {
+    grid-template-columns: 395.886px 379.272px 379.272px;
+    gap: 22.785px;
+    height: 508.751px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model {
+    height: 508.751px;
+    gap: 17.089px;
+    padding: 22.785px;
+    border-radius: 13.291px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-index {
+    height: 22.785px;
+    flex-basis: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-index span {
+    font-size: 11.392px;
+    line-height: 20.506px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-index img {
+    width: 22.785px;
+    height: 22.785px;
+    flex-basis: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-heading {
+    height: 70.873px;
+    flex-basis: 70.873px;
+    gap: 7.595px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-heading h3 {
+    font-size: 28px;
+    line-height: 36.4px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-heading p {
+    font-size: 14px;
+    line-height: 25.2px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-media {
+    height: 190.017px;
+    flex-basis: 190.017px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-crop {
+    width: 335.127px;
+    max-width: 100%;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-inline .interaction-model-crop,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-assistant .interaction-model-crop,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-window .interaction-model-crop {
+    height: 190.017px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-rules {
+    gap: 17.089px;
+    padding-top: 16.139px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-rules > div {
+    gap: 5.696px;
+    height: 49.367px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-rules dt {
+    font-size: 11.392px;
+    line-height: 18.987px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-model-rules dd {
+    font-size: 12px;
+    line-height: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-conclusion {
+    height: 81.57px;
+    gap: 26.582px;
+    padding: 22.785px 28.481px;
+    border: 1px solid #7ddddd;
+    border-radius: 13.291px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-conclusion > img {
+    width: 22.785px;
+    height: 22.785px;
+    flex-basis: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction .interaction-conclusion p {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #interaction + #assistant {
+    margin-top: 0;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant {
+    width: 1200px;
+    max-width: 1200px;
+    height: 904.38px;
+    gap: 34.177px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-intro,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-intro-grid,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-layout,
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-conclusion {
+    width: 1200px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-intro {
+    height: 143.582px;
+    gap: 26.582px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant :is(.assistant-chapter-mark, .assistant-rules-label) {
+    gap: 11.392px;
+    font-size: 10.443px;
+    line-height: 13px;
+    letter-spacing: 1.044px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-intro-grid {
+    grid-template-columns: 744.304px 370.253px;
+    gap: 85.443px;
+    height: 104px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-intro-grid h3 {
+    width: 744.304px;
+    font-size: 40px !important;
+    line-height: 1.3 !important;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-intro-grid > p {
+    width: 370.253px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-layout {
+    grid-template-columns: 561.076px 581.962px;
+    gap: 56.962px;
+    height: 578.278px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-evidence {
+    width: 561.076px;
+    height: 578.278px;
+    gap: 11.392px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-evidence-crop {
+    width: 545.886px;
+    height: 545.886px;
+    flex-basis: 545.886px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-evidence figcaption {
+    font-size: 11.392px;
+    line-height: 20.506px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-rules {
+    width: 581.962px;
+    height: 478.101px;
+    gap: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-rules h4 {
+    width: 581.962px;
+    height: 43.2px;
+    font-size: 24px;
+    line-height: 43.2px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-rules dl {
+    width: 581.962px;
+    gap: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-rules dl > div {
+    width: 581.962px;
+    height: 70.253px;
+    gap: 7.595px;
+    padding-top: 7.595px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-rules dt {
+    font-size: 16px;
+    line-height: 28.8px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-rules dd {
+    font-size: 12px;
+    line-height: 21.6px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-conclusion {
+    height: 114.165px;
+    gap: 26.582px;
+    padding: 22.785px 28.481px;
+    border: 1px solid #7ddddd;
+    border-radius: 13.291px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-conclusion > img {
+    width: 22.785px;
+    height: 22.785px;
+    flex-basis: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-conclusion strong {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant .assistant-conclusion p {
+    font-size: 14px;
+    line-height: 25.2px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #assistant + #system-asset {
+    margin-top: 68.354px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset {
+    width: 1200px;
+    max-width: 1200px;
+    height: 694.253px;
+    gap: 34.177px;
+    overflow: hidden;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-intro {
+    width: 1200px;
+    height: 147.57px;
+    gap: 22.785px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-label {
+    gap: 11.392px;
+    font-size: 10.443px;
+    line-height: 13px;
+    letter-spacing: 1.044px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-intro h3 {
+    width: 1200px;
+    height: 58.861px;
+    font-size: 40px !important;
+    line-height: 58.861px !important;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-intro > p:last-child {
+    width: 1200px;
+    height: 29.43px;
+    font-size: 16px;
+    line-height: 29.43px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .mechanism-grid {
+    grid-template-columns: repeat(5, 227.848px);
+    gap: 15.19px;
+    width: 1200px;
+    height: 326.582px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .mechanism-grid article {
+    width: 227.848px;
+    height: 326.582px;
+    min-height: 326.582px;
+    gap: 22.785px;
+    padding: 22.785px 18.987px;
+    border-radius: 15.19px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .mechanism-grid article > span {
+    font-size: 10.443px;
+    line-height: 16.139px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .mechanism-grid h4 {
+    height: 56.962px;
+    font-size: 18px;
+    line-height: 28.481px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .mechanism-grid p {
+    font-size: 16px;
+    line-height: 28.481px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-insight {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: none;
+    width: 1200px;
+    height: 117.57px;
+    margin: 34.177px 0 0;
+    padding: 22.785px 28.481px 22.785px 77.848px;
+    border: 1px solid #7ddddd;
+    border-radius: 13.291px;
+    background: #fff;
+    color: #192c48;
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1279px) {
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #design-delivery {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #decisions + #interaction {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 48px;
+    padding-left: 48px;
+    overflow: visible;
+  }
+}
+
+/* Keep the insight label and copy aligned, and let the emphasized contract
+   wrap as one phrase on desktop instead of leaving an orphaned final word. */
+.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-insight {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  column-gap: 8px;
+}
+
+.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-insight-label {
+  display: block;
+  white-space: nowrap;
+}
+
+.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-insight-copy {
+  min-width: 0;
+}
+
+.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-insight-core {
+  display: inline-block;
+  color: #192c48;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 620px) {
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-insight {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+  }
+
+  .portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #system-asset .system-asset-insight-core {
+    display: inline;
+    white-space: normal;
+  }
+}
+
+/* Keep the Figma square marker at every breakpoint. The shared mobile footer
+   otherwise restores its generic horizontal rule. */
+.portfolio-case-ai.case-ai-original.case-ai-vercel.case-v2 #case-footer .portfolio-case-footer-kicker i {
+  width: 5.696px;
+  height: 5.696px;
+  flex: 0 0 5.696px;
+}
+
+/* VHR / Figma frame 88:1198 spacing pass. Keep the shared 64px case
+   navigation, then follow the 1200px chapter canvas and vertical rhythm. */
+@media (min-width: 901px) {
+  .portfolio-case-vhr .vhr-fidelity-nav-inner,
+  .portfolio-case-vhr .vhr-fidelity-hero-inner,
+  .portfolio-case-vhr .vhr-fidelity-section-inner,
+  .portfolio-case-vhr .vhr-fidelity-solution-inner,
+  .portfolio-case-vhr .vhr-fidelity-delivery-inner,
+  .portfolio-case-vhr .vhr-fidelity-verification-inner,
+  .portfolio-case-vhr .vhr-fidelity-review-inner {
+    width: min(1200px, calc(100% - 48px));
+    max-width: 1200px;
+  }
+
+  /* 00 / Project overview */
+  .portfolio-case-vhr #overview {
+    height: 716px;
+    min-height: 716px;
+    overflow: hidden;
+  }
+  .portfolio-case-vhr .vhr-fidelity-hero-inner {
+    position: relative;
+    box-sizing: border-box;
+    height: 716px;
+    padding: 48px 0 0;
+  }
+  .portfolio-case-vhr .vhr-fidelity-hero-grid {
+    position: absolute;
+    top: 89px;
+    left: 0;
+    display: grid;
+    grid-template-columns: 576.923px 465.366px;
+    gap: 136.077px;
+    width: 1178.366px;
+    margin: 0;
+  }
+  .portfolio-case-vhr .vhr-fidelity-copy {
+    position: relative;
+    padding-top: 51.308px;
+  }
+  body.portfolio-case.portfolio-case-vhr.vhr-fidelity .vhr-fidelity-copy h1 {
+    width: 580.769px;
+    margin: 20.461px 0 30px;
+    font-size: 48px !important;
+    line-height: 60px !important;
+  }
+  .portfolio-case-vhr .vhr-fidelity-lede {
+    width: 557.692px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-thesis {
+    position: absolute;
+    top: 397px;
+    left: 0;
+    gap: 18px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-tags {
+    position: absolute;
+    top: 352px;
+    left: 0;
+    gap: 7.96px;
+    width: 588px;
+    margin: 0;
+  }
+  .portfolio-case-vhr .vhr-fidelity-tags li {
+    padding: 4px 10px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-visual {
+    width: 465.366px;
+    max-width: 465.366px;
+    height: 363.808px;
+    border-radius: 16px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-visual img {
+    width: 465.366px;
+    height: 363.808px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-note {
+    position: absolute;
+    top: 462px;
+    left: 713px;
+    width: 487px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-facts {
+    position: absolute;
+    top: 532px;
+    left: 0;
+    grid-template-columns: repeat(4, 276.923px);
+    gap: 30.769px;
+    width: 1200px;
+    margin: 0;
+    padding-top: 27.846px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-facts dt { margin-bottom: 8px; }
+  .portfolio-case-vhr .vhr-fidelity-support {
+    position: absolute;
+    top: 654.115px;
+    left: 0;
+    margin: 0;
+  }
+
+  /* Shared chapter heading coordinates */
+  .portfolio-case-vhr :is(.vhr-fidelity-insight-inner, .vhr-fidelity-roles-inner,
+    .vhr-fidelity-solution-inner, .vhr-fidelity-delivery-inner,
+    .vhr-fidelity-verification-inner) > .vhr-fidelity-section-kicker { top: 64px; }
+  .portfolio-case-vhr :is(.vhr-fidelity-insight-inner, .vhr-fidelity-roles-inner,
+    .vhr-fidelity-solution-inner, .vhr-fidelity-delivery-inner,
+    .vhr-fidelity-verification-inner) > h2 { top: 105.346px; }
+  .portfolio-case-vhr :is(.vhr-fidelity-insight-inner, .vhr-fidelity-roles-inner,
+    .vhr-fidelity-solution-inner, .vhr-fidelity-delivery-inner,
+    .vhr-fidelity-verification-inner) > .vhr-fidelity-section-lede { top: 173.615px; }
+
+  /* 01 / Business insight */
+  .portfolio-case-vhr #background { height: 952px; overflow: hidden; }
+  .portfolio-case-vhr .vhr-fidelity-insight-inner {
+    box-sizing: border-box;
+    height: 952px;
+    padding: 0;
+  }
+  .portfolio-case-vhr .vhr-fidelity-insight-grid {
+    top: 237.077px;
+    grid-template-columns: 576.923px 576.923px;
+    gap: 46.154px;
+    width: 1200px;
+    height: 330.769px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-insight-photo,
+  .portfolio-case-vhr .vhr-fidelity-perspectives {
+    width: 576.923px;
+    height: 330.769px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-insight-photo img {
+    width: 576.923px;
+    height: 294.231px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-insight-photo figcaption { margin-top: 13.461px; }
+  .portfolio-case-vhr .vhr-fidelity-perspectives article { height: 134.615px; }
+  .portfolio-case-vhr .vhr-fidelity-perspectives article + article { height: 196.154px; }
+  .portfolio-case-vhr .vhr-fidelity-perspectives h3 { top: 5.769px; }
+  .portfolio-case-vhr .vhr-fidelity-perspectives p { top: 50.962px; }
+  .portfolio-case-vhr .vhr-fidelity-perspectives strong { top: 87.5px; }
+  .portfolio-case-vhr .vhr-fidelity-perspectives article + article h3 { top: 28.846px; }
+  .portfolio-case-vhr .vhr-fidelity-perspectives article + article p { top: 74.039px; }
+  .portfolio-case-vhr .vhr-fidelity-perspectives article + article strong { top: 110.577px; }
+  .portfolio-case-vhr .vhr-fidelity-insight-steps {
+    top: 617.846px;
+    grid-template-columns: repeat(3, 369.231px);
+    gap: 46.154px;
+    width: 1200px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-judgement {
+    top: 790.923px;
+    width: 1200px;
+    height: 79.808px;
+    padding: 23px 28.846px;
+  }
+
+  /* 02 / Roles and tasks */
+  .portfolio-case-vhr #roles { height: 1069px; overflow: hidden; }
+  .portfolio-case-vhr .vhr-fidelity-roles-inner {
+    box-sizing: border-box;
+    height: 1069px;
+    padding: 0;
+  }
+  .portfolio-case-vhr .vhr-fidelity-task-banner {
+    top: 237.077px;
+    width: 1200px;
+    height: 75px;
+    min-height: 75px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-role-cards {
+    top: 342.846px;
+    grid-template-columns: repeat(3, 384.615px);
+    gap: 23.077px;
+    width: 1200px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-role-cards article {
+    width: 384.615px;
+    height: 338.462px;
+    min-height: 338.462px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-task-title { top: 727.462px; width: 1200px; }
+  .portfolio-case-vhr .vhr-fidelity-task-path {
+    top: 787.077px;
+    grid-template-columns: repeat(5, 221.538px);
+    gap: 23.077px;
+    width: 1200px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-task-path li {
+    width: 221.538px;
+    height: 73.077px;
+    min-height: 73.077px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-role-rules {
+    top: 896.692px;
+    grid-template-columns: repeat(3, 384.615px);
+    gap: 23.077px;
+    width: 1200px;
+  }
+  .portfolio-case-vhr .vhr-fidelity-role-rules article { width: 384.615px; }
+
+  /* 03 / Core solution */
+  .portfolio-case-vhr #design { height: 3369px; overflow: hidden; }
+  .portfolio-case-vhr .vhr-fidelity-solution-inner {
+    box-sizing: border-box;
+    height: 3369px;
+    padding: 0;
+  }
+  .portfolio-case-vhr .vhr-solution-copy { width: 576.923px; }
+  .portfolio-case-vhr .vhr-solution-copy h3 { margin-top: 22.385px; line-height: 1.4; }
+  .portfolio-case-vhr .vhr-solution-evidence {
+    padding-top: 0;
+    border-top: 0;
+  }
+  .portfolio-case-vhr .vhr-solution-evidence img { object-fit: contain; }
+  .portfolio-case-vhr .vhr-solution-a-copy { top: 281.308px; }
+  .portfolio-case-vhr .vhr-solution-b-copy { top: 867.846px; left: 623.077px; }
+  .portfolio-case-vhr .vhr-solution-b-copy .vhr-solution-change { margin-top: 54px; }
+  .portfolio-case-vhr .vhr-solution-c-copy { top: 1454.385px; }
+  .portfolio-case-vhr .vhr-solution-d-copy { top: 2415.923px; }
+  .portfolio-case-vhr .vhr-solution-c-copy .vhr-solution-problem,
+  .portfolio-case-vhr .vhr-solution-d-copy .vhr-solution-problem { margin-top: 15.693px; }
+  .portfolio-case-vhr .vhr-solution-a-visual {
+    top: 258.231px;
+    left: 623.077px;
+    width: 576.923px;
+    height: 500.962px;
+  }
+  .portfolio-case-vhr .vhr-solution-b-visual {
+    top: 908.231px;
+    width: 576.923px;
+    height: 376.923px;
+  }
+  .portfolio-case-vhr .vhr-solution-divider-c { top: 1419.769px; }
+  .portfolio-case-vhr .vhr-solution-c-visual {
+    top: 1614px;
+    width: 1200px;
+    height: 631.674px;
+  }
+  .portfolio-case-vhr .vhr-solution-c-change { top: 2275.539px; }
+  .portfolio-case-vhr .vhr-solution-divider-d { top: 2381.308px; }
+  .portfolio-case-vhr .vhr-solution-d-visual {
+    top: 2591.539px;
+    width: 1200px;
+    height: 515.385px;
+  }
+  .portfolio-case-vhr .vhr-solution-d-notes {
+    top: 3141.884px;
+    grid-template-columns: repeat(3, 384.615px);
+    gap: 23.077px;
+  }
+  .portfolio-case-vhr .vhr-solution-d-notes b { padding-top: 4.808px; }
+  .portfolio-case-vhr .vhr-solution-d-notes p { margin-top: 18.192px; }
+  .portfolio-case-vhr .vhr-solution-footnote { top: 3265.923px; }
+
+  /* 04 / Delivery */
+  .portfolio-case-vhr #paths { height: 1030px; overflow: hidden; }
+  .portfolio-case-vhr .vhr-fidelity-delivery-inner {
+    box-sizing: border-box;
+    height: 1030px;
+    padding: 0;
+  }
+  .portfolio-case-vhr .vhr-delivery-steps {
+    top: 258.231px;
+    grid-template-columns: repeat(6, 180.769px);
+    gap: 23.077px;
+  }
+  .portfolio-case-vhr .vhr-delivery-steps li { height: 105.769px; }
+  .portfolio-case-vhr .vhr-delivery-compare {
+    top: 414px;
+    grid-template-columns: 576.923px 576.923px;
+    gap: 46.154px;
+  }
+  .portfolio-case-vhr .vhr-delivery-compare article {
+    width: 576.923px;
+    height: 273.077px;
+  }
+  .portfolio-case-vhr .vhr-delivery-bars {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 12px;
+    width: calc(100% - 48px);
+  }
+  .portfolio-case-vhr .is-after .vhr-delivery-bars {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 10px;
+  }
+  .portfolio-case-vhr .vhr-delivery-footnote { top: 710.154px; }
+  .portfolio-case-vhr .vhr-delivery-resources {
+    top: 760.539px;
+    grid-template-columns: 443.538px 756.462px;
+    width: 1200px;
+    height: 182px;
+    padding: 30.769px;
+  }
+
+  /* 05 / Validation */
+  .portfolio-case-vhr #verification { height: 1637px; overflow: hidden; }
+  .portfolio-case-vhr .vhr-fidelity-verification-inner {
+    box-sizing: border-box;
+    height: 1637px;
+    padding: 0;
+  }
+  .portfolio-case-vhr .vhr-verification-field {
+    top: 260.154px;
+    width: 773.878px;
+    height: 328.654px;
+  }
+  .portfolio-case-vhr .vhr-verification-field img {
+    width: 773.878px;
+    height: 293.269px;
+  }
+  .portfolio-case-vhr .vhr-verification-stats {
+    top: 260.154px;
+    left: 792.308px;
+    grid-template-columns: 192.308px 192.308px;
+    grid-template-rows: 157.692px 157.692px;
+    gap: 23.077px;
+    width: 407.692px;
+  }
+  .portfolio-case-vhr .vhr-verification-stats article {
+    width: 192.308px;
+    height: 157.692px;
+  }
+  .portfolio-case-vhr .vhr-verification-evidence {
+    top: 633.231px;
+    grid-template-columns: 600px 600px;
+    width: 1200px;
+    height: 500px;
+    padding: 30.769px 0;
+  }
+  .portfolio-case-vhr .vhr-voc { padding: 0 26.923px; }
+  .portfolio-case-vhr .vhr-test-method { padding: 0 30.769px; }
+  .portfolio-case-vhr .vhr-voc-bars > div {
+    grid-template-columns: 111.538px minmax(0, 1fr) 40px;
+    column-gap: 12px;
+  }
+  .portfolio-case-vhr .vhr-voc-bars i { width: 100%; }
+  .portfolio-case-vhr .vhr-verification-iteration-title { top: 1179.385px; width: 1200px; }
+  .portfolio-case-vhr .vhr-verification-iterations {
+    top: 1239.962px;
+    grid-template-columns: 267.308px 267.308px 267.308px 282.692px;
+    gap: 30.769px;
+    width: 1200px;
+    height: 215.385px;
+  }
+  .portfolio-case-vhr .vhr-verification-iterations article { width: 267.308px; }
+  .portfolio-case-vhr .vhr-verification-iterations figure {
+    width: 282.692px;
+    height: 215.385px;
+    margin-left: 23.077px;
+  }
+  .portfolio-case-vhr .vhr-verification-iterations figure img {
+    width: 251.923px;
+    height: 143.269px;
+    margin: 15.385px;
+  }
+  .portfolio-case-vhr .vhr-verification-boundary {
+    top: 1520.539px;
+    grid-template-columns: 125px 1fr;
+    gap: 23.077px;
+    width: 1200px;
+    height: 62px;
+    padding: 19.231px 23.077px;
+  }
+
+  /* 06 / Project review */
+  .portfolio-case-vhr #validation { height: 778px; overflow: hidden; }
+  .portfolio-case-vhr .vhr-fidelity-review-inner {
+    box-sizing: border-box;
+    height: 778px;
+    padding: 0;
+  }
+  .portfolio-case-vhr .vhr-review-card {
+    top: 64px;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 438.462px;
+    padding: 34.615px 38.462px;
+  }
+  .portfolio-case-vhr .vhr-review-card h2 {
+    margin-top: 28.154px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .portfolio-case-vhr .vhr-review-lede { margin-top: 17.385px; }
+  .portfolio-case-vhr .vhr-review-columns {
+    gap: 30.769px;
+    margin-top: 51.846px;
+  }
+  .portfolio-case-vhr .vhr-review-columns p { margin-top: 20.962px; }
+  .portfolio-case-vhr .vhr-review-next { margin-top: 20.192px; padding-top: 20.192px; }
+  .portfolio-case-vhr .vhr-review-statement { top: 583.231px; }
+  .portfolio-case-vhr .vhr-review-signature { top: 654.385px; }
+
+  .portfolio-case-vhr #case-footer {
+    height: 351px;
+    min-height: 351px;
+    padding-top: 64px;
+  }
+}
+
+.portfolio-case-vhr .vhr-solution-c-visual,
+.portfolio-case-vhr .vhr-solution-d-visual {
+  box-sizing: border-box;
+  border: 1px solid #d8d8df;
+}
+
+.portfolio-case-vhr .vhr-delivery-bars i {
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);
+}
+
+.portfolio-case-vhr .vhr-voc-bars i,
+.portfolio-case-vhr .vhr-voc-bars b {
+  overflow: hidden;
+  border-radius: 999px;
+}
+
+@media (max-width: 900px) {
+  .portfolio-case-vhr .vhr-fidelity-nav nav {
+    overflow: clip;
+    max-width: 100%;
+  }
+
+  .portfolio-case-vhr .vhr-voc-bars > div {
+    grid-template-columns: 88px minmax(0, 1fr) 30px;
+    column-gap: 10px;
+  }
+
+  .portfolio-case-vhr .vhr-fidelity-nav nav > a:nth-child(n + 4):not(.vhr-fidelity-resume) {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .portfolio-case-vhr .vhr-delivery-compare article.is-after { min-height: 340px; }
+
+  .portfolio-case-vhr .vhr-voc-bars > div {
+    grid-template-columns: 70px minmax(0, 1fr) 22px;
+    column-gap: 8px;
+  }
+}
